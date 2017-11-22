@@ -1,19 +1,29 @@
 * {margin: 0;padding: 0;}
+body {font-family:'Lato', sans-serif;margin:0 0;min-width:400px;max-width:1920px;}
 ol, ul {list-style-type:none;}
-#site_header {background:#202532;padding:1em;}
-#site_header ol {display:flex;flex-basis:400px;flex-wrap:wrap;justify-content:center;}
-#site_header li {margin:0 1em;}
-#site_header nav {font-family:"Fjalla One";text-align:center;margin:0 5vw 0;}
-#site_header nav a {text-decoration:none;color:#f4912d;}
-a:hover {color:#89cce5;}
-
-body {font-family:'Lato', sans-serif;margin:0 0;}
-
-h1 {font-family:'Fjalla One', sans-serif;text-align:center;font-size:3em;}
+h1 {font-family:'Fjalla One', sans-serif;text-align:center;font-size:3em;color:#fff;}
 h2 {font-family:'Fjalla One', sans-serif;text-align:center;font-size:1.5em;}
 h3 {font-family: 'Fjalla One', sans-serif;text-align:center;font-size:1.5em;margin:0;}
 
+/* *****************************
+******** Article, header, ******
+*********** footer *************
+********************************
+***************************** */
+#site_header {background:#202532;padding:1em;}
+#site_header ol {display:flex;flex-basis:400px;flex-wrap:wrap;justify-content:center;}
+#site_header li {margin:0 0.5em;font-size:1.3em;}
+#site_header nav {font-family:"Fjalla One";text-align:center;margin:0 5vw 0;}
+#site_header nav a {text-decoration:none;color:#f4912d;}
+#site_header nav a:hover {color:rgb(150,200,250);}
+
+article a:link {color:rgb(150,150,250);}
+article a:visited {color:rgb(150,150,250);}
+article a:hover {color:rgb(150,200,250);}
+article a:active {color:rgb(150,150,250);}
+
 footer {background:#202532;color:#f4912d;text-align:center;}
+footer p b {font-size:1.2em;}
 section, header, footer {padding:1em;}
 
 
@@ -24,7 +34,7 @@ section, header, footer {padding:1em;}
 #scrum_video video {width:80%;max-width:1920px;display:block;margin:1em auto;}
 #scrum_video {}
 #trello {text-align:center;}
-#trello a {font-size:3em;padding:1em 0 0;}
+#trello p a {font-size:2em;padding:1em 0 0;display:block;}
 
 
 

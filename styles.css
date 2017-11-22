@@ -1,71 +1,30 @@
 * {margin: 0;padding: 0;}
 ol, ul {list-style-type:none;}
-header {
-    background: #202532;
-    width: 100vw;
-    padding: 1em;
-}
+#site_header {background:#202532;padding:1em;}
+#site_header ol {display:flex;flex-basis:400px;flex-wrap:wrap;justify-content:center;}
+#site_header li {margin:0 1em;}
+#site_header nav {font-family:"Fjalla One";text-align:center;margin:0 5vw 0;}
+#site_header nav a {text-decoration:none;color:#f4912d;}
+a:hover {color:#89cce5;}
 
-header nav {
-    font-family: "Fjalla One";
-    text-align: center;
-    margin: 0 5vw 0;
-}
+body {font-family:'Lato', sans-serif;margin:0 0;}
 
-header nav a {
-    text-decoration: none;
-    color: #f4912d;
-    padding-left: 4px;
-    padding-right: 7px;
-    display: block;
-}
+h1 {font-family:'Fjalla One', sans-serif;text-align:center;font-size:3em;}
+h2 {font-family:'Fjalla One', sans-serif;text-align:center;font-size:1.5em;}
+h3 {font-family: 'Fjalla One', sans-serif;text-align:center;font-size:1.5em;margin:0;}
 
-header nav a:hover {
-    color: #89cce5;
-}
-
-@media screen and (min-width: 676px) {
-    header nav a {
-        display: inline-block;
-    }
-}
-
-body {
-    font-family: 'Lato', sans-serif;
-    margin: 0 0;
-}
-
-h1 {
-    font-family: 'Fjalla One', sans-serif;
-    text-align: center;
-    font-size: 100px;
-}
-
-h2 {
-    font-family: 'Fjalla One', sans-serif;
-    text-align: center;
-}
-
-h3 {
-    font-family: 'Fjalla One', sans-serif;
-    text-align: center;
-    font-size: 20px;
-    margin: 0 0 0 0;
-}
-
-.sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: row;
-}
-
-#footer div {
-    background-color: #202532;
-    padding: 10px;
-    text-align: center;
-    color: #f4912d;
-}
+footer {background:#202532;color:#f4912d;text-align:center;}
 section, header, footer {padding:1em;}
+
+
+/* *****************************
+******** Sektioner i article ***
+********************************
+***************************** */
 #scrum_video video {width:80%;max-width:1920px;display:block;margin:1em auto;}
-#scrum_video {justify-content:center;}
+#scrum_video {}
+#trello {text-align:center;}
+#trello a {font-size:3em;padding:1em 0 0;}
+
+
+

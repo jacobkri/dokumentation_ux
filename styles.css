@@ -1,6 +1,6 @@
 * {margin: 0;padding: 0;}
 html{height:100%;}
-body {font-family:'Lato', sans-serif;font-size:16px;margin:0 0;min-width:400px;max-width:1920px;position:relative;min-height:100%;}
+body {font-family:'Lato', sans-serif;font-size:16px;margin:0 0;min-width:400px;max-width:1920px;position:relative;min-height:100%;background:rgb(240,240,240);}
 ol, ul {list-style-type:none;}
 header h1 {font-family:'Fjalla One', sans-serif;font-size:3em;}
 article h1 {font-size:1.5em;text-transform:uppercase;}
@@ -12,11 +12,15 @@ article h1 {font-size:1.5em;text-transform:uppercase;}
 ********************************
 ***************************** */
 #site_header {background:#202532;padding:1em;color:#fff;text-align:center;}
-#site_header ol {display:flex;flex-basis:400px;flex-wrap:wrap;justify-content:center;}
-#site_header li {margin:0 0.5em;font-size:1.3em;}
-#site_header nav {font-family:"Fjalla One";text-align:center;margin:0 5vw 0;}
-#site_header nav a {text-decoration:none;color:#f4912d;}
-#site_header nav a:hover {color:rgb(150,200,250);}
+section header {text-align:center;} /* border:1px solid rgb(30,30,30);border-radius:0.5em; */
+section header h1 {font-size:2.5em;}
+#site_header ol, section header ol {display:flex;flex-basis:400px;flex-wrap:wrap;justify-content:center;}
+#site_header li, section header li {margin:0 0.5em;font-size:1.3em;}
+#site_header nav, section header nav {font-family:"Fjalla One";text-align:center;margin:0 5vw 0;}
+#site_header nav a, section header nav a {text-decoration:none;color:#f4912d;}
+#site_header nav a:hover, section header nav a:hover {color:rgb(150,200,250);}
+
+
 
 article a:link {color:rgb(150,150,250);}
 article a:visited {color:rgb(150,150,250);}
@@ -29,21 +33,22 @@ footer {background:#202532;color:#f4912d;text-align:center;position:absolute;bot
 footer p b {font-size:1.2em;}
 section, header, footer {padding:1em;}
 
-.hr {height:1px;filter:blur(1px);width:100%;margin:0 auto;border:1px solid #202532;} /* Simpel horizontal linje */
+.hr {height:10px;width:100%;background:rgb(230,230,230);border-radius:5px;margin:1.5em auto;} /* Simpel horizontal linje */
 /* *****************************
 ******** Sektioner i article ***
 ********************************
 ***************************** */
 .link_ud {text-align:center;padding:1em 0 0;font-size:2em;} /* Link til dokumentationssite, trello-board. Osv... */
-.link_ud::before {content: "Eksternt link: ";} /* Tilføjes til alle eksterne links */
+.link_ud::before {content: "Eksternt link: ";font-style:italic;} /* Tilføjes til alle eksterne links */
 #scrum_video video {max-width:1920px;display:block;margin:1em auto;width:100%;}
 section {margin:1em 0 0;}
 
+.article_sections_divED {background:rgb(255,255,255);} /* final-touch background eye candy rundt om bestemte sections */
 /* *****************************
 ******** Fjernes når alt er ****
 **********Indsat****************
 ***************************** */
-.placeholder {border:1px solid rgba(255,0,0,0.3);border-radius:0.2em;position:relative;min-height:5em;}
+.placeholder {border:1px solid rgba(255,0,0,0.3);border-radius:0.2em;position:relative;min-height:5em;width:90%;margin:1em auto;}
 .placeholder::after {content:"PLACEHOLDER";margin:1em 0 0;position:absolute;bottom:0.2em;right:0.2em;font-style:italic;font-size:0.8em;}
 
 

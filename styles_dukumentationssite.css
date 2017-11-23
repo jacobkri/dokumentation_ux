@@ -1,0 +1,20 @@
+
+article header ul {list-style-type:none;display:flex;flex-basis:300px;flex-wrap:wrap;justify-content:center;}
+article header li {margin:1em;overflow:hidden;word-break:break-all;max-width:16%;min-width:150px;}
+article header li img {width:50%;margin:1em;border-radius:50%;}
+
+#experience_map ol {list-style-type:none;display:flex;flex-basis:400px;flex-wrap:wrap;justify-content:space-between;}
+#experience_map li {width:33%;}
+article header li div {text-align:center;}
+#experience_map li img {width:100%;border-radius:0.2em;}
+
+#persona p {margin:0;}
+#persona section p {margin:0 0 1em;}
+#persona section {padding:0;}
+#persona section h1 {font-size:1.1em;}
+#interview ul {list-style-type:disc;margin:1em 0 0 2em;}
+#interview ul li {font-weight:bold;}
+#interview ul li li {font-weight:normal;}
+#interview ul ul {list-style-type:circle;margin:0.5em 0 1em 1em;}
+
+section section section h1 {font-size:1.2em;} /* 4-levels sektioner (med article) - her gør vi altså teksten lidt mindre. */

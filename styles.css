@@ -1,46 +1,35 @@
-* {margin: 0;padding: 0;}
+* {margin:0;padding:0;}
 html{height:100%;}
 body {font-family:'Lato', sans-serif;font-size:16px;margin:0 0;min-width:400px;max-width:1920px;position:relative;min-height:100%;background:rgb(240,240,240);}
 ol, ul {list-style-type:none;}
-header h1 {font-family:'Fjalla One', sans-serif;font-size:3em;}
+#site_header h1 {font-family:'Fjalla One', sans-serif;font-size:3em;}
 article h1 {font-size:1.5em;text-transform:uppercase;}
   /* h2, h3 {} /* Vi har ikke brug for h2-h6 i HTML5 og Living Standard */
-
 /* *****************************
 ******** Article, header, ******
 *********** footer *************
 ********************************
 ***************************** */
-#site_header {background:#202532;padding:1em;color:#fff;text-align:center;}
+#site_header {background:#202532;padding:2.2em 0 0.5em 0;color:#fff;text-align:center;}
 section header {text-align:center;} /* border:1px solid rgb(30,30,30);border-radius:0.5em; */
 section header h1 {font-size:2.5em;}
-#burger_menu {font-size:2em;color:#f4912d;background:rgba(49,50,66,0.1);padding:0.2em;z-index:3;
-height:1em;overflow:hidden;position:-webkit-sticky;position:-moz-sticky;position:-ms-sticky;position:-o-sticky;text-align:center;
-position:sticky;top:0px;width:5em;margin:0 auto;border-bottom-left-radius:0.2em;border-bottom-right-radius:0.2em;
+section {padding:3em 0 0 0;}
+/* *****************************
+******** Vores lækre burger ****
+********* Værsgo og spis! ******
+********************************
+***************************** */
+#burger_menu {font-size:2em;color:#f4912d;background:rgba(49,50,66,0.2);
+height:1.2em;overflow:hidden;position:-webkit-sticky;position:-moz-sticky;text-align:center;
+top:0px;width:5em;margin:0 auto;border-bottom-left-radius:0.2em;border-bottom-right-radius:0.2em;
 transition: background 1s ease-in-out 0.2s;
 }
-#menu_deco {position:absolute;bottom:-1em;height:1em;background:rgb(49,50,66);width:100%;left:0;filter:blur(10px);}
-#burger_menu ol, section header ol {display:flex;flex-basis:400px;flex-wrap:wrap;justify-content:center;}
+#burger_menu_wrap {position:fixed;top:0;width:100%;z-index:3;}
+#burger_menu_wrap ol, section header ol {display:flex;flex-basis:400px;flex-wrap:wrap;justify-content:center;}
 #burger_menu li, section header li {margin:0 0.5em;font-size:1em;font-weight:bold;}
-#burger_menu nav, section header nav {font-family:"Fjalla One";text-align:center;margin:0 1em 0;}
-#burger_menu nav a, section header nav a {text-decoration:none;color:#f4912d;}
-#burger_menu nav a:hover, section header nav a:hover {color:rgb(150,200,250);}
-/* #burger_menu:hover {cursor:pointer;color:rgb(150,200,250);height:auto;width:auto;margin:0;border-radius:0;background:rgba(49,50,66,0.9);}
-*/
-#burger_menu:hover {animation: menu_open 0.3s linear forwards;cursor:pointer;color:rgb(150,200,250);}
-/* #burger_menu:not( :hover ){animation: menu_close 1s linear forwards; } */
-.menu_close {animation: menu_close 0.3s linear forwards;}
-@keyframes menu_open {
-    0% {width:5em;height:1em;background:rgba(49,50,66,0.1);}
-    50% {background:rgba(49,50,66,0.9);width:100%;}
-    100% {height:auto;background:rgba(49,50,66,0.9);width:100%;border-radius:0;}
-}
-
-@keyframes menu_close {
-    0% {height:1em;background:rgba(49,50,66,0.9);width:100%;}
-    100% {height:1em;background:rgba(49,50,66,0.1);width:5em;}
-}
-
+section header nav {font-family:"Fjalla One";text-align:center;margin:0 1em 0;}
+#burger_menu a, section header nav a {text-decoration:none;color:#f4912d;}
+#burger_menu a:hover, section header nav a:hover {color:rgb(150,200,250);}
 
 article a:link {color:rgb(100,100,250);}
 article a:visited {color:rgb(100,100,250);}
@@ -62,26 +51,45 @@ section, header, footer {padding:1em;}
 .link_ud::before {content: "Eksternt link: ";font-style:italic;} /* Tilføjes til alle eksterne links */
 #scrum_video video {max-width:1920px;display:block;margin:1em auto;width:100%;}
 section {margin:1em 0 0;}
-
 .article_sections_divED {background:rgb(255,255,255);} /* final-touch background eye candy rundt om bestemte sections */
 /* *****************************
-******** Fjernes når alt er ****
-**********Indsat****************
+******** Animationer ***********
+**********Alt muligt spas*******
+***************************** */
+.fadein {animation:fadein 2s forwards;}
+@keyframes fadein { /* Fade-in effekt når man besøger / opdatere siden  (Ikke når man klikker på links!) */
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+#burger_menu:hover {animation: menu_open 0.3s linear forwards;cursor:pointer;color:rgb(150,200,250);}
+  /* #burger_menu:not( :hover ){animation: menu_close 1s linear forwards; } */
+
+/* Mht. .menu_ animationerne: Det er nok bedst at bruge JavaScript / jQuery,
+   da ":not" formegentlig ikke vil virke i touch enheder... onClick="void(0)" skulle derimod virke. */
+.menu_close {animation: menu_close 0.3s linear forwards;}
+@keyframes menu_open {
+    0% {width:5em;height:1.2em;background:rgba(49,50,66,0.1);}
+    50% {background:rgba(49,50,66,0.9);width:100%;height:1.2em;}
+    100% {height:auto;background:rgba(49,50,66,0.9);width:100%;border-radius:0;}
+}
+@keyframes menu_close {
+    0% {height:1.2em;background:rgba(49,50,66,0.9);width:100%;}
+    100% {height:1.2em;background:rgba(49,50,66,0.1);width:5em;}
+}
+/* *****************************
+******** media queries *********
+********* Final touches ********
+***************************** */
+@media screen and (max-width:500px) {
+  #site_header {padding:5em 0 0 0;font-size:0.5em;} /* Skift tim 0.5em i font størrelse på første h1, så der er plads til hele overskriften. */
+  article {width:98%;} /* udnyt pladsen i siderne bedre */
+}
+/* *****************************
+******** Placeholders :-D ******
+********************************
 ***************************** */
 .placeholder {border:1px solid rgba(255,0,0,0.3);border-radius:0.2em;position:relative;min-height:5em;width:90%;margin:1em auto;}
 .placeholder::after {content:"PLACEHOLDER";margin:1em 0 0;position:absolute;bottom:0.2em;right:0.2em;font-style:italic;font-size:0.8em;}
 
-
-
-.fadein {animation:fadein 2s forwards;}
-@keyframes fadein {
-    0% {opacity:0;}
-    100% {opacity:1;}
-}
-
-
-@media screen and (max-width:500px) {
-
-}
 
 

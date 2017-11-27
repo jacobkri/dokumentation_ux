@@ -24,7 +24,7 @@ article header li div {text-align:center;}
 
 #ide_grundlag, #kantinen_video {padding:0;}
 .table_wrap {width:97%;margin:0 auto;overflow-x:scroll;}
-table {empty-cells:hide;width:98%;font-size:0.8em}
+table {empty-cells:hide;width:100%;font-size:0.8em}
 table td {border:1px solid rgb(230,230,230);padding:0.2em;}
 .indent {text-indent:3em;font-style:italic;color:rgb(180,180,180);}
 article img {width:100%;}

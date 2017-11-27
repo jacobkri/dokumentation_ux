@@ -1,7 +1,7 @@
 #ide1,#ide2,#ide3 {border:1px solid rgb(235,235,235);border-radius:0.3em;background:rgb(255,255,255);} /*  */
 
 article header ul {list-style-type:none;display:flex;flex-basis:300px;flex-wrap:wrap;justify-content:center;}
-article header li {margin:1em;overflow:hidden;word-break:break-all;max-width:16%;min-width:150px;}
+article header li {overflow:hidden;word-break:break-all;max-width:16%;min-height:1.5em;min-width:180px;}
 article header li img {width:50%;margin:1em;border-radius:50%;}
 
 #experience_maps ol {list-style-type:none;display:flex;flex-basis:400px;flex-wrap:wrap;justify-content:space-between;}

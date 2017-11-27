@@ -14,18 +14,38 @@ article h1 {font-size:1.5em;text-transform:uppercase;}
 #site_header {background:#202532;padding:1em;color:#fff;text-align:center;}
 section header {text-align:center;} /* border:1px solid rgb(30,30,30);border-radius:0.5em; */
 section header h1 {font-size:2.5em;}
-#site_header ol, section header ol {display:flex;flex-basis:400px;flex-wrap:wrap;justify-content:center;}
-#site_header li, section header li {margin:0 0.5em;font-size:1.3em;}
-#site_header nav, section header nav {font-family:"Fjalla One";text-align:center;margin:0 5vw 0;}
-#site_header nav a, section header nav a {text-decoration:none;color:#f4912d;}
-#site_header nav a:hover, section header nav a:hover {color:rgb(150,200,250);}
+#burger_menu {font-size:2em;color:#f4912d;background:rgba(49,50,66,0.1);padding:0.2em;z-index:3;
+height:1em;overflow:hidden;position:-webkit-sticky;position:-moz-sticky;position:-ms-sticky;position:-o-sticky;text-align:center;
+position:sticky;top:0px;width:5em;margin:0 auto;border-bottom-left-radius:0.2em;border-bottom-right-radius:0.2em;
+transition: background 1s ease-in-out 0.2s;
+}
+#menu_deco {position:absolute;bottom:-1em;height:1em;background:rgb(49,50,66);width:100%;left:0;filter:blur(10px);}
+#burger_menu ol, section header ol {display:flex;flex-basis:400px;flex-wrap:wrap;justify-content:center;}
+#burger_menu li, section header li {margin:0 0.5em;font-size:1em;font-weight:bold;}
+#burger_menu nav, section header nav {font-family:"Fjalla One";text-align:center;margin:0 1em 0;}
+#burger_menu nav a, section header nav a {text-decoration:none;color:#f4912d;}
+#burger_menu nav a:hover, section header nav a:hover {color:rgb(150,200,250);}
+/* #burger_menu:hover {cursor:pointer;color:rgb(150,200,250);height:auto;width:auto;margin:0;border-radius:0;background:rgba(49,50,66,0.9);}
+*/
+#burger_menu:hover {animation: menu_open 0.3s linear forwards;cursor:pointer;color:rgb(150,200,250);}
+/* #burger_menu:not( :hover ){animation: menu_close 1s linear forwards; } */
+.menu_close {animation: menu_close 0.3s linear forwards;}
+@keyframes menu_open {
+    0% {width:5em;height:1em;background:rgba(49,50,66,0.1);}
+    50% {background:rgba(49,50,66,0.9);width:100%;}
+    100% {height:auto;background:rgba(49,50,66,0.9);width:100%;border-radius:0;}
+}
+
+@keyframes menu_close {
+    0% {height:1em;background:rgba(49,50,66,0.9);width:100%;}
+    100% {height:1em;background:rgba(49,50,66,0.1);width:5em;}
+}
 
 
-
-article a:link {color:rgb(150,150,250);}
-article a:visited {color:rgb(150,150,250);}
+article a:link {color:rgb(100,100,250);}
+article a:visited {color:rgb(100,100,250);}
 article a:hover {color:rgb(150,200,250);}
-article a:active {color:rgb(150,150,250);}
+article a:active {color:rgb(100,100,250);}
 article {color:rgb(93,93,93);width:80%;margin:0 auto;padding:0 0 10em;}
 article img {max-width:100%;min-width:20%;}
 
@@ -58,3 +78,10 @@ section {margin:1em 0 0;}
     0% {opacity:0;}
     100% {opacity:1;}
 }
+
+
+@media screen and (max-width:500px) {
+
+}
+
+

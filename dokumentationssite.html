@@ -2,17 +2,21 @@
 <html lang="da">
  <head>
     <meta charset="utf-8">
+    <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dokumentationssite til UX</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles_dukumentationssite.css">
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
  </head>
 
  <body class="fadein">
   <header id="site_header">
     <h1>Dokumentationssite til UX</h1>
-    <nav>
-      <ol>
+  </header>
+  <div id="burger_menu">☢  &#9776; ☢
+      <nav>
+       <ol>
         <li><a href="#interview">Interview- guide og noter</a></li>
         <li><a href="#experience_maps">Experience Maps</a></li>
         <li><a href="#scrum_video">Scrum videoer</a></li>
@@ -24,9 +28,9 @@
         <li><a href="#ide3">Idé 3 – Vejledning</a></li>
          <!--   <li><a href=""></a></li>  <<<<<<----- Copy paste :-D  -->
       </ol>
-    </nav>
-  </header>
-  
+     </nav>
+
+  </div>
   <article>
     <header>
        <!-- <h1>Dokumentationsite</h1>
@@ -73,24 +77,34 @@
       <h1>Scrum video</h1>
       <video controls>
         <source src="scrum1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+        Din browser understøtter ikke video tagget. Skift evt til Chrome!
       </video>
       <div class="hr"></div>
       <video controls>
         <source src="scrum2.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+        Din browser understøtter ikke video tagget. Skift evt til Chrome!
       </video>
       <div class="hr"></div>
       <video controls>
         <source src="scrum3.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+        Din browser understøtter ikke video tagget. Skift evt til Chrome!
+      </video>
+      <div class="hr"></div>
+      <video controls>
+        <source src="scrum4.mp4" type="video/mp4">
+        Din browser understøtter ikke video tagget. Skift evt til Chrome!
+      </video>
+      <div class="hr"></div>
+      <video controls>
+        <source src="scrum5.mp4" type="video/mp4">
+        Din browser understøtter ikke video tagget. Skift evt til Chrome!
       </video>
     </section>
     
     <section id="interview">
       <h1>Interview- guide og noter</h1>
       <p class="indent">IP – Anonym Medstuderende</p>
-      <ul>
+      <ul> <!-- Meget stor liste, kan være lidt svær at forstå stylingen på -->
         <li>Hvorfor valgte du kea?
          <ul><li>Ville gerne lave noget mere grafisk og få det på papir</li></ul>
         </li>
@@ -138,12 +152,12 @@
          <li><a href="#storyboard_kantinen">Storyboard</a></li>
          <li><a href="#kantinen_video">Test Video</a></li>
          <li><a href="#ide_grundlag">Idé Grundlag</a></li>
+         <li><a href="#koncept_kantinen">Konceptvalidering</a></li>
          <!--   <li><a href=""></a></li>  <<<<<<----- Copy paste :-D  -->
         </ol>
        </nav>
       </header>
-      <!-- <p><b>#ide</b> Beskrivelse af jeres udgangspunkt for Ideate-fasen. Spørgeguide og   interviewnoter, Pain-point, persona og billede af jeres Experience map, 
-som det så ud, da I tog beslutning om det pågældende udgangspunkt.</p> -->
+
      <section id="pain_point_kantinen">
        <h1>Kantinen – Pain Point</h1>
        <p>Udvalget i KEA’s kantine møder ikke de studerendes behov eller rådighedsbeløb.</p>
@@ -171,7 +185,7 @@ som det så ud, da I tog beslutning om det pågældende udgangspunkt.</p> -->
      </section>
      
      <section id="ide_grundlag">
-       <h1>Idé Grundlag</h1>
+       <h1>Idé Grundlag – Kantinen</h1>
        <ul>
          <li>Oprettelse af bruger: 
           <ul>
@@ -222,6 +236,88 @@ som det så ud, da I tog beslutning om det pågældende udgangspunkt.</p> -->
        </ul>
      </section>
      
+     <section id="koncept_kantinen">
+       <h1>Konceptvalidering – Kantinen</h1>
+        <p><b>Brugerne/målgruppen</b></p>
+       <section>
+         <h1>Hvem er målgruppen?</h1>
+         <ul>
+          <li>Kvantificer størrelsen på målgruppen - kan den skaleres op?</li>
+         </ul>
+         <p>
+          Målgruppen for KEAntine app’en er på nuværende tidspunkt målrettet studerende på KEA Lygten 16.
+         Fremadrettet ville man kunne videreudvikle appen så den også kunne benyttes på de resterende KEA.
+         </p>
+       </section>
+       
+       <section>
+         <h1>Forstår målgruppen vores løsning?</h1>
+         <ul>
+          <li>(gennem vores tests)</li>
+         </ul>
+         <p>Testpersonen forstod appens formål. Appen var meget simpel og lige til. 
+Der var dog lidt forvirring omkring menupunktet “Se point”. Først skulle testpersonen lige forstå hele konceptet med point, hvad det drejede sig om og hvordan det fungerede. Da testpersonen klikkede sig ind på punktet forstod han princippet i at man kunne bruge nogen optjente point til at købe ting i kantinen, men der var dog igen lidt forvirring, denne gang over en proces bar, som testpersonen ikke helt kunne tyde hvad var. 
+         </p>
+         <p>Punktet feedtback skabte også forvirring, hvad skal man give feedback på? 
+Savner priser på appen. 
+         </p>
+       </section>
+
+       <section>
+        <h1>Hvilken værdi vil løsningen give virksomheden?</h1>
+        <p>Hvis man lavede en app til KEAs kantine, vil det blive nemmere for de studerende at holde sig opdateret på dagens ret. De studerende vil via appen kunne deltage i afstemninger og dermed have indflydelse på retterne, som vil gøre at kantinen tilpasses de studerenes behov. Dette vil nok betyde at flere
+           studerende til gøre brug af kantinen og Simply Cooking vil dermed nå ud til flere og opnå et større salg. 
+        </p>
+        <p>Hvis flere studerende benyttede kantinen vil flere studerende samles og der vil dermed skabe et bedre fællesskab. Et bedre fællesskab vil betyde at de sociale vil blive
+           stærkere på KEA, hvilket vil være med til at skabe et godt ry for KEA.</p>
+       </section>
+       
+       <section>
+        <h1>Hvilken værdi giver den målgruppen?</h1>
+        <ul>
+         <li>Spørg dem eksempelvis “hvad ville du give for det”</li>
+        </ul>
+        <p>Appen ville for det første have til formål at hjælpe de studerende på KEA. Den vil være med til at give dem et overblik over maden i kantinen og gøre det nemmere for de studerende at benytte kantinen. Men den vil også hjælpe selve kantinen, ved at skabe et nemt overblik over maden for de studerende og gøre det hele nemmere, vil det nok også øget salget af mad i kantinen. 
+        </p>
+        <p>Via appen vil de studerende få mere indflydelse og det bliver nemmere for kantinen til tilfredsstille de studerende. Menuen vil blive mere målrettet til de studerendes behov, da de vil have mulighed for at deltage i afstemningen om dagensret. Derudover vil et point system i appen kunne bidrage på det økonomiske, bare små ting,
+           som at kunne få hver 10 kop kaffe gratis vil vil få stor betydning for de fleste studerende.
+        </p>
+       </section>  
+       
+       <section>
+        <h1>Kan udviklingen lade sig gøre? Eller er vi afhængige af teknologi, der ikke er moden endnu?</h1>
+        <ul>
+         <li>Prøv at kvantificere (budget)</li>
+        </ul>
+        <p>Udviklingen af appen ville sagtens kunne lade sig gøre med nuværende teknologi. Der er tale om at skulle designe og programmer en simpel og enkel app,
+           som på nuværende tidspunkt skulle kunne benyttes af de studerende på KEA lygten 16.
+        </p>
+        <p>Udfordringen ville være samarbejdet med kantinen. Det ville kræve nogen ændringer i forhold hvordan kantinen fungere
+           i dag. Det ville kræve nogen mere faste priser i kantinen og en form for klippekort.
+           Samtidig vil det kræve at dem i kantinen er villig til at få opdateret appen fast hver morgen og
+           får sendt en del beskeder ud.
+        </p>
+       </section>
+       
+       <section>
+        <h1>Inden for hvilken tidshorisont kan det realiseres?</h1>
+        <p>Da kantinen allerede findes og fungere findes alt man skal bruge til at lave appen allerede.
+          Dette betyder at det egentlig kun er produktionstiden som der skal tages højde for, så et par måneder.
+        </p>
+       </section>
+       
+       <section>
+         <h1>Har andre allerede realiseret en tilsvarende løsning?</h1>
+         <p>
+          Da KEAs kantine ikke har nogen app i forvejen er der ikke nogen direkte konkurrenter.
+          Hvis man lavede en app til KEAs kantine vil det være den eneste app de studerende ville
+          kunne benytte sig af når de ville tjekke ugens menu osv.
+         </p>
+       </section>
+       
+     </section>
+
+
     </section> <!--  Ide 1 slut -->
     
     <section id="ide2">
@@ -356,6 +452,18 @@ som det så ud, da I tog beslutning om det pågældende udgangspunkt.</p> -->
     </section>
     </div>    
   </article>
+  
+<!--  Vi kan bruge ren CSS i stedet for JS / jQuery
+      I.e:   Is :not(:hover) { ... }
+      Det gør dog, at menuen foldes ind første gang siden vises.
+      Ved ikke hvor god support er i mobile enheder....
+   -->
+  <script type="text/javascript">
+$("#burger_menu").mouseover(function() {
+	  $("#burger_menu").addClass("menu_close");
+});
+  </script>
+  
  </body>
 
 </html>

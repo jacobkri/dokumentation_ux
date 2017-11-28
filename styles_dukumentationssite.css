@@ -1,8 +1,8 @@
-#ide1,#ide2,#ide3 {border:1px solid rgb(235,235,235);border-radius:0.3em;background:rgb(255,255,255);} /*  */
-
-article header ul {list-style-type:none;display:flex;flex-basis:300px;flex-wrap:wrap;justify-content:center;}
-article header li {overflow:hidden;word-break:break-all;max-width:16%;min-height:1.5em;min-width:180px;}
-article header li img {width:50%;margin:1em;border-radius:50%;}
+#ide1,#ide2,#ide3, .article_sections_divED {border-radius:0.3em;border:0.2em solid rgba(214,90,89,0.5);background:rgb(234,80,69);} /* */
+.credits ul {list-style-type:none;display:flex;flex-basis:300px;flex-wrap:wrap;justify-content:center;}
+.credits li {overflow:hidden;word-break:break-all;max-width:16%;min-height:1.5em;min-width:180px;}
+.credits a {font-size:0.9em;font-style:italic;text-decoration:underline;} /* !important overskriver tidligere angivelse i styles.css */
+.credits img {width:50%;margin:1em;border-radius:50%;}
 
 #experience_maps ol {list-style-type:none;display:flex;flex-basis:400px;flex-wrap:wrap;justify-content:space-between;}
 #experience_maps li {width:33%;}
@@ -23,8 +23,12 @@ article header li div {text-align:center;}
 #ide_grundlag ul li ul {list-style-type:square;margin:0.5em 0 1em 1em;}
 
 #ide_grundlag, #kantinen_video {padding:0;}
+
+#koncept_praktik ol {margin: 1em 0 1em 2em;list-style-type:decimal;}
+
 .table_wrap {width:97%;margin:0 auto;overflow-x:scroll;}
 table {empty-cells:hide;width:100%;font-size:0.8em}
 table td {border:1px solid rgb(230,230,230);padding:0.2em;}
-.indent {text-indent:3em;font-style:italic;color:rgb(180,180,180);}
+.indent {text-indent:3em;font-style:italic;color:rgba(255,255,255,0.5);}
 article img {width:100%;}
+

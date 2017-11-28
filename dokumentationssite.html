@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="da">
- <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,706 +9,804 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles_dukumentationssite.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One">
- </head>
+</head>
 
- <body class="fadein">
-  <header id="site_header">
-    <h1>Dokumentationssite til UX</h1>
-  </header>
-  <div id="burger_menu_wrap">
-      <nav id="burger_menu" onclick="void(0)">☰
-       <ol>
-        <li class="to_da_top"><a href="#site_header" title="Til toppen :-D">⮉</a></li>
-        <li><a href="#interview">Interview- guide og noter</a></li>
-        <li><a href="#experience_maps">Experience Maps</a></li>
-        <li><a href="#scrum_video">Scrum videoer</a></li>
-        <li><a href="#trello">Trello-board</a></li>
-        <li><a href="#burndownchart">Burn-down charts</a></li>
-        <li><a href="#benchmark">Benchmark</a>
-        <li><a href="#ide1">Idé 1 – KEAntinen</a></li>
-        <li><a href="#ide2">Idé 2 – Gitgudhub</a></li>
-        <li><a href="#ide3">Idé 3 – Kea Intern</a></li>
-         <!--   <li><a href=""></a></li>   Copy paste :-D  -->
-      </ol>
-     </nav>
-  </div>
-  <article>
-    <header>
-       <!-- <h1>Dokumentationsite</h1>
-       <p>Lavet af:</p> -->
-      <div class="credits">
-       <ul>
-        <li>
-         <div><img src="credits/jacob.jpg" alt="Jacob Kristensen"></div>
-         <p><b>Jacob Kristensen</b></p>
-         <p><a href="mailto:jaco839n@stud.kea.dk">jaco839n@stud.kea.dk</a></p>
-        </li>
-        <li>
-         <div><img src="credits/unknown.jpg" alt="Laura Amalie"></div>
-         <p><b>Laura Amalie</b></p>
-         <p><a href="mailto:las2202@hotmail.com">las2202@hotmail.com</a></p>
-        </li>
-        <li>
-         <div><img src="credits/unknown.jpg" alt="Sidsel Mathilde"></div>
-         <p><b>Sidsel Mathilde</b><p>
-         <p><a href="mailto:ms.oldorf@gmail.com">ms.oldorf@gmail.com</a></p>
-        </li>
-        <li>
-         <div><img src="credits/knuth.jpg" alt="Martin Knuth"></div>
-         <p><b>Martin Knuth</b></p>
-         <p><a href="mailto:marlle@hotmail.com">marlle@hotmail.com</a></p>
-        </li>
-        <li>
-         <div><img src="credits/unknown.jpg" alt="Rasmus Merhøj"></div>
-         <p><b>Rasmus Merhøj</b></p>
-         <p><a href="mailto:rasm986a@stud.kea.dk">rasm986a@stud.kea.dk</a></p>
-        </li>
-       </ul>
-      </div>
+<body class="fadein">
+    <header id="site_header">
+        <h1>Dokumentationssite til UX</h1>
     </header>
-    <div class="article_sections_divED">
-    <section id="trello">
-      <h1>Trello-board</h1>
-      <p class="link_ud"><a href="https://trello.com/b/BETvGdjW/gruppe-1">Trello-board</a></p>
-    </section>
-    
-    <section id="burndownchart" class="placeholder">
-     <p>#burndownchart</p>
-    </section>
-    
-    <section id="scrum_video">
-      <h1>Scrum video</h1>
-      <video controls>
+    <div id="burger_menu_wrap">
+        <nav id="burger_menu" onclick="void(0)">☰
+            <ol>
+                <li class="to_da_top"><a href="#site_header" title="Til toppen :-D">⮉</a></li>
+
+                <li><a href="#trello">Trello-board</a></li>
+                <li><a href="#scrum_video">Scrum videoer</a></li>
+                <li><a href="#burndownchart">Burn-down chart</a></li>
+                <li><a href="#experience_maps">Experience Map</a></li>
+                <li><a href="#interview">Interview</a></li>
+
+                <li><a href="#ide1">Idé 1 – KEAntinen</a></li>
+                <li><a href="#ide2">Idé 2 – Gitgudhub</a></li>
+                <li><a href="#ide3">Idé 3 – Kea Intern</a></li>
+                <li><a href="#valg_af_ide">Valg af idé</a></li>
+                <!--   <li><a href=""></a></li>   Copy paste :-D  -->
+            </ol>
+        </nav>
+    </div>
+    <article>
+        <header>
+            <!-- <h1>Dokumentationsite</h1>
+       <p>Lavet af:</p> -->
+            <div class="credits">
+                <ul>
+                    <li>
+                        <div><img src="credits/jacob.jpg" alt="Jacob Kristensen"></div>
+                        <p><b>Jacob Kristensen</b></p>
+                        <p><a href="mailto:jaco839n@stud.kea.dk">jaco839n@stud.kea.dk</a></p>
+                    </li>
+                    <li>
+                        <div><img src="credits/unknown.jpg" alt="Laura Amalie"></div>
+                        <p><b>Laura Amalie</b></p>
+                        <p><a href="mailto:las2202@hotmail.com">las2202@hotmail.com</a></p>
+                    </li>
+                    <li>
+                        <div><img src="credits/mathilde.jpg" alt="Sidsel Mathilde"></div>
+                        <p><b>Sidsel Mathilde</b>
+                            <p>
+                                <p><a href="mailto:ms.oldorf@gmail.com">ms.oldorf@gmail.com</a></p>
+                    </li>
+                    <li>
+                        <div><img src="credits/knuth.jpg" alt="Martin Knuth"></div>
+                        <p><b>Martin Knuth</b></p>
+                        <p><a href="mailto:marlle@hotmail.com">marlle@hotmail.com</a></p>
+                    </li>
+                    <li>
+                        <div><img src="credits/unknown.jpg" alt="Rasmus Merhøj"></div>
+                        <p><b>Rasmus Merhøj</b></p>
+                        <p><a href="mailto:rasm986a@stud.kea.dk">rasm986a@stud.kea.dk</a></p>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="article_sections_divED">
+            <section id="trello">
+                <header>
+                    <a href="https://trello.com/b/BETvGdjW/gruppe-1">
+                        <h1>Trello-board</h1>
+                    </a>
+                </header>
+                <!--                <p class="link_ud"><a href="https://trello.com/b/BETvGdjW/gruppe-1">Trello-board</a></p>-->
+            </section>
+
+            <section id="scrum_video">
+                <header>
+                    <a href="scrumvideoer.html">
+                        <h1>Scrum video</h1>
+                    </a>
+                </header>
+                <!--
+                <p class="link_ud"><a href="scrumvideoer.html">
+                    Scrum video
+                </a></p>
+-->
+                <video controls>
         <source src="scrum1.mp4" type="video/mp4">
         Din browser understøtter ikke video tagget. Skift evt til Chrome!
       </video>
-      <div class="hr"></div>
-      <video controls>
+                <div class="hr"></div>
+                <video controls>
         <source src="scrum2.mp4" type="video/mp4">
         Din browser understøtter ikke video tagget. Skift evt til Chrome!
       </video>
-      <div class="hr"></div>
-      <video controls>
+                <div class="hr"></div>
+                <video controls>
         <source src="scrum3.mp4" type="video/mp4">
         Din browser understøtter ikke video tagget. Skift evt til Chrome!
       </video>
-      <div class="hr"></div>
-      <video controls>
+                <div class="hr"></div>
+                <video controls>
         <source src="scrum4.mp4" type="video/mp4">
         Din browser understøtter ikke video tagget. Skift evt til Chrome!
       </video>
-      <div class="hr"></div>
-      <video controls>
+                <div class="hr"></div>
+                <video controls>
         <source src="scrum5.mp4" type="video/mp4">
         Din browser understøtter ikke video tagget. Skift evt til Chrome!
       </video>
-    </section>
-    
-    <section id="interview">
-      <h1>Interview- guide og noter</h1>
-      <p class="indent">IP – Anonym Medstuderende</p>
-      <ul> <!-- Meget stor liste, kan være lidt svær at forstå stylingen på -->
-        <li>Hvorfor valgte du kea?
-         <ul><li>Ville gerne lave noget mere grafisk og få det på papir</li></ul>
-        </li>
-        <li>Hvad er dine spidskompetencer inden for mmd?
-         <ul><li>Design og animation, (AE) noget man reelt kommer til at bruge.</li></ul>
-        </li>
-        <li>Hvad er du ikke så stærk i inden for mmd¿
-         <ul><li>UX og indsamling af data og salg af produkt.</li></ul>
-        </li>
-        <li>Hvis du kunne ændre én ting på kea, hvad ville det så være? (og hvorfor?)
-         <ul><li>bedre struktur, af undervisning tid osv.</li></ul>
-        </li>
-        <li>Nævn 3 ting som kunne gøres bedre i kantinen
-         <ul><li>pris, billigere kaffe, menu (ved ikke hvor den findes)</li></ul>
-        </li>
-        <li>Nævn 3 ting som kunne gøres bedre i forhold til skemaet 
-         <ul><li>Fuckfronter (et reelt skema, man ikke skal tilgå fra fronter, struktur) </li></ul>
-        </li>
-        <li>Nævn 3 ting som kunne gøres undervisningen bedre og mere struktureret
-         <ul><li>Snak mere sammen (underviserne) bedre vejledning, forkert prioritering af tid (bla andet at man underviser hele dagen, og så smider en opgave på)</li></ul>
-        </li>
-        <li>Hvad synes du kea mangler?
-         <ul><li>Har mange ressourcer, men mangler noget, der samler det</li></ul>
-        </li>
-        <li>Hvad kunne man gøre for at forbedre det?
-         <ul><li>Ingen anelse</li></ul>
-        </li>
-        <li>Hvad er det bedste ved kea?
-         <ul><li>Kantinen, der er et godt miljø. folk engagerer sig.</li></ul>
-        </li>
-        <li>Hvad er den mest uduelige app?
-         <ul><li>En app om peter ulf (med uduelige informationer) (Ulfen Peter)</li></ul>
-        </li>
-      </ul>
-    </section>
-    </div>
-    <section id="ide1">
-      <header>
-       <h1>Idé 1 – KEAntinen</h1>
-       <nav>
-        <ol>
-         <li><a href="#pain_point_kantinen">Pain Point</a></li>
-         <li><a href="#experience_map_kantinen">Experience Map</a></li>
-         <li><a href="#kantinen_skitse">Skitse</a></li>
-         <li><a href="#storyboard_kantinen">Storyboard</a></li>
-         <li><a href="#kantinen_video">Test Video</a></li>
-         <li><a href="#ide_grundlag">Idé Grundlag</a></li>
-         <li><a href="#koncept_kantinen">Konceptvalidering</a></li>
-         <!--   <li><a href=""></a></li>   Copy paste :-D  -->
-        </ol>
-       </nav>
-      </header>
+            </section>
 
-     <section id="pain_point_kantinen">
-       <h1>Kantinen – Pain Point</h1>
-       <p>Udvalget i KEA’s kantine møder ikke de studerendes behov eller rådighedsbeløb.</p>
-     </section>
-     
-     <section id="experience_map_kantinen">
-       <h1>Experience Map – KEAntinen</h1>
-       <img src="bucket/experience-map/ide-valg-1.JPG" alt="Kantine ideen..." title="Kantine ideen...">   
-     </section>
-     <section id="kantinen_skitse">
-      <h1>Skitse – KEAntinen</h1> <!-- Derfor "skitse" i stedet for "Charrette":
+            <section id="burndownchart">
+                <header>
+                    <h1>Burn-down chart</h1>
+                </header>
+                <img src="" alt="burn-down chart">
+                <p>#burndownchart</p>
+            </section>
+
+
+            <section id="experience_maps">
+                <header>
+                    <h1>Experience Map</h1>
+                </header>
+                <img src="bucket/experience-map/experience-map.jpg" alt="Experience mappen, før valg af idé" title="Experience mappen, før valg af idé">
+                <ol>
+                    <li><img src="bucket/experience-map/ide-valg-2.JPG" alt="Kantine ideen..." title="Kantine ideen..."></li>
+                    <li><img src="bucket/experience-map/ide-valg-1.JPG" alt="Vejlednings ideen..." title="Vejlednings ideen..."></li>
+                    <li><img src="bucket/experience-map/ide-valg-3.JPG" alt="Praktik ideen..." title="Praktik ideen..."></li>
+                </ol>
+            </section>
+
+            <section id="interview">
+                <header>
+                    <h1>Interview</h1>
+                </header>
+                <p class="indent">IP – Anonym Medstuderende</p>
+                <ul>
+                    <!-- Meget stor liste, kan være lidt svær at forstå stylingen på -->
+                    <li>Hvorfor valgte du kea?
+                        <ul>
+                            <li>Ville gerne lave noget mere grafisk og få det på papir</li>
+                        </ul>
+                    </li>
+                    <li>Hvad er dine spidskompetencer inden for mmd?
+                        <ul>
+                            <li>Design og animation, (AE) noget man reelt kommer til at bruge.</li>
+                        </ul>
+                    </li>
+                    <li>Hvad er du ikke så stærk i inden for mmd¿
+                        <ul>
+                            <li>UX og indsamling af data og salg af produkt.</li>
+                        </ul>
+                    </li>
+                    <li>Hvis du kunne ændre én ting på kea, hvad ville det så være? (og hvorfor?)
+                        <ul>
+                            <li>Bedre struktur, af undervisning tid osv.</li>
+                        </ul>
+                    </li>
+                    <li>Nævn 3 ting som kunne gøres bedre i kantinen
+                        <ul>
+                            <li>Pris, billigere kaffe, menu (ved ikke hvor den findes)</li>
+                        </ul>
+                    </li>
+                    <li>Nævn 3 ting som kunne gøres bedre i forhold til skemaet
+                        <ul>
+                            <li>Fuckfronter (et reelt skema, man ikke skal tilgå fra fronter, struktur) </li>
+                        </ul>
+                    </li>
+                    <li>Nævn 3 ting som kunne gøres undervisningen bedre og mere struktureret
+                        <ul>
+                            <li>Snak mere sammen (underviserne) bedre vejledning, forkert prioritering af tid (bla andet at man underviser hele dagen, og så smider en opgave på)</li>
+                        </ul>
+                    </li>
+                    <li>Hvad synes du kea mangler?
+                        <ul>
+                            <li>Har mange ressourcer, men mangler noget, der samler det</li>
+                        </ul>
+                    </li>
+                    <li>Hvad kunne man gøre for at forbedre det?
+                        <ul>
+                            <li>Ingen anelse</li>
+                        </ul>
+                    </li>
+                    <li>Hvad er det bedste ved kea?
+                        <ul>
+                            <li>Kantinen, der er et godt miljø. folk engagerer sig.</li>
+                        </ul>
+                    </li>
+                    <li>Hvad er den mest uduelige app?
+                        <ul>
+                            <li>En app om peter ulf (med uduelige informationer) (Ulfen Peter)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="persona">
+                <header>
+                    <h1>Persona</h1>
+                </header>
+
+                <div id="persona_container">
+                    <div class="personaimg"></div>
+
+                    <div id="persona_info">
+                        <ul>
+                            <li><b>Navn:</b> Jonathan</li>
+                            <li><b>Alder:</b> 22 år</li>
+                            <li><b>Køn:</b> Mand</li>
+                            <li><b>Bopæl:</b> Vesterbro - bor til leje</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <section>
+                    <h3>Beskrivelse:</h3>
+                    <p>Jonathan er en ung fyr på 22 år, som studerer MMD på KEA. Han elsker at være social og deltager tit i de sociale arrangementer, som KEA tilbyder. Han lider tit af fomo, hvis han ikke kan deltage og har derfor svært ved at sige nej til en god fest.</p>
+                    <p>Han er en kreativ sjæl, som er vild med at tegne. Hans primære interesse er indenfor markedsføring og branding. Han har søgt ind på MMD, for at gøre karriere indenfor reklamebranchen. Jonathan er en middel-ambitiøs studerende - han ønsker ikke at studiet skal fylde for meget, så han ikke har tid til sine venner. Omvendt oplever han udfordringer omkring at studiet er for high-paced. Han føler derfor til tider ikke at han kan følge med. Dertil føler han også ofte, at han mister overblikket i informationsstrømmene på studiet. Han savner en måde, hvorpå man kan skabe et overblik i kaos.</p>
+                    <p>Udover han interesser indenfor markedsføring og branding, er Jonathan også en stor madentusiast og livsnyder. Når han hænger ud med sine venner, nyder han derfor at lade mad være omdrejningspunktet. Hans gutter har en mandeloge, hvor de mødes en gang om måneden - enten ude eller hos hinanden, hvor værten står for menuen. Han er altid frisk på at eksperimentere i køkkenet. Jonathan har derfor også visse standarder, for hvad han har lyst til at spise. Det skal være sundt, men vigtigst af alt; det skal smage af noget. Jonathan føler sig ofte uinspireret over udvalget af omkringliggende spisesteder i nær radius af KEA. Han synes hverken at de lever op til hans præferencer eller pengepung. Dette har resulteret i at han som ofte vælger at planlægge og forberede sin frokost hjemmefra. Han går dog lidt og drømmer om en kantineordning, som var til at betale og som tilbød et varieret og omskifteligt udvalg.</p>
+                    <p>Nettet er en naturlig del af hans hverdag. Han benytter det som redskab til at kommunikere med venner, underholdning, uddannelse, job og informationssøgning. Dette sker på tværs af forskellige platforme - primært computer og smartphone.</p>
+                </section>
+            </section>
+
+        </div>
+        <section id="ide1">
+            <header>
+                <h1>Idé 1 – KEANTINEN</h1>
+                <nav>
+                    <ol>
+                        <li><a href="#pain_point_kantinen">Pain Point</a></li>
+                        <li><a href="#experience_map_kantinen">Experience Map</a></li>
+                        <li><a href="#kantinen_skitse">Skitse</a></li>
+                        <li><a href="#storyboard_kantinen">Storyboard</a></li>
+                        <li><a href="#kantinen_video">Test Video</a></li>
+                        <li><a href="#ide_grundlag">Idé Grundlag</a></li>
+                        <li><a href="#koncept_kantinen">Konceptvalidering</a></li>
+                        <!--   <li><a href=""></a></li>   Copy paste :-D  -->
+                    </ol>
+                </nav>
+            </header>
+
+            <section id="pain_point_kantinen">
+                <h2>Pain Point</h2>
+                <p>Udvalget i KEA’s kantine møder ikke de studerendes behov eller rådighedsbeløb.</p>
+            </section>
+
+            <section id="experience_map_kantinen">
+                <h2>Experience Map</h2>
+                <img src="bucket/experience-map/ide-valg-1.JPG" alt="Kantine ideen..." title="Kantine ideen...">
+            </section>
+            <section id="kantinen_skitse">
+                <h1>Skitse</h1>
+                <!-- Derfor "skitse" i stedet for "Charrette":
                                       https://en.wikipedia.org/wiki/Charrette ;-)
                                  -->
-      <img src="bucket/kantinen/skitse.jpg" alt="Skitse af kantine appen...">    
-     </section>
-     
-     <section id="storyboard_kantinen">
-      <h1>Storyboard – KEAntinen</h1>
-      <img src="bucket/kantinen/storyboard1.jpg" alt="Storyboard til kantinen..">      
-     </section>
+                <img src="bucket/kantinen/skitse.jpg" alt="Skitse af kantine appen...">
+            </section>
 
-     <section id="kantinen_video">
-      <h1>Test video – KEAntinen</h1>
-      <p class="link_ud"><a href="https://www.youtube.com/watch?v=cXSwGR3wync">Video</a></p>      
-     </section>
-     
-     <section id="ide_grundlag">
-       <h1>Idé Grundlag – KEAntinen</h1>
-       <ul>
-         <li>Oprettelse af bruger: 
-          <ul>
-           <li>Navn</li>
-           <li>Studienummer/mail</li>
-           <li>Alder</li>
-           <li>Køn</li>
-           <li>Kortoplysninger - linket til mobilepay</li>
-           <li>Præferencer</li>
-          </ul>
-         </li>
-         <li>Oversigt over ugens menu</li>
-         <li>
-          <b>Loyalitetsprogram:</b>
-          <ul>
-           <li>Point system</li>
-           <li>Efter loyalitet baseret på købshistorik</li>
-           <li>Efter aktivitet i forbindelse med:
-            <ul>
-             <li>Afstemninger</li>
-             <li>Feedback på oplevelsen af det købte måltid</li>
-            </ul>
-           </li>
-           <li>Valuecards</li>
-          </ul>
-         </li>
-         <li>
-          <b>Medbestemmelse</b> fra brugergruppen 
-          <ul>
-           <li>De studerendes maddag</li>
-           <li>Ugentlig afstemning om kommende uges menu</li>
-          </ul>
-         </li>
-         <li><b>Early bird tilbud</b> til dem, som bestiller inden kl. X eller de 10/20 første</li>
-         <li>
-          <b>Pushmeddelelser:</b>
-          <ul>
-           <li>“Maden er klar”</li>
-           <li>“Godmorgen - i dag serveres ….”</li>
-           <li>“Er I ved at være sultne? Kom ned i kantinen og nyd …. med os”</li>
-          </ul>
-         </li>
-       </ul>
-       <p><b>Brugssituationer:</b></p>
-       <ul>
-        <li>Når man tager afsted om morgenen</li>
-        <li>Når man begynder at blive sulten inden frokosttid</li>
-       </ul>
-     </section>
-     
-     <section id="koncept_kantinen">
-       <h1>Konceptvalidering – KEAntinen</h1>
-        <p><b>Brugerne/målgruppen</b></p>
-       <section>
-         <h1>Hvem er målgruppen?</h1>
-         <ul>
-          <li>Kvantificer størrelsen på målgruppen - kan den skaleres op?</li>
-         </ul>
-         <p>
-          Målgruppen for KEAntine app’en er på nuværende tidspunkt målrettet studerende på KEA Lygten 16.
-         Fremadrettet ville man kunne videreudvikle appen så den også kunne benyttes på de resterende KEA.
-         </p>
-       </section>
-       
-       <section>
-         <h1>Forstår målgruppen vores løsning?</h1>
-         <ul>
-          <li>(gennem vores tests)</li>
-         </ul>
-         <p>Testpersonen forstod appens formål. Appen var meget simpel og lige til. 
-Der var dog lidt forvirring omkring menupunktet “Se point”. Først skulle testpersonen lige forstå hele konceptet med point, hvad det drejede sig om og hvordan det fungerede. Da testpersonen klikkede sig ind på punktet forstod han princippet i at man kunne bruge nogen optjente point til at købe ting i kantinen, men der var dog igen lidt forvirring, denne gang over en proces bar, som testpersonen ikke helt kunne tyde hvad var. 
-         </p>
-         <p>Punktet feedtback skabte også forvirring, hvad skal man give feedback på? 
-Savner priser på appen. 
-         </p>
-       </section>
+            <section id="storyboard_kantinen">
+                <h2>Storyboard</h2>
+                <img src="bucket/kantinen/storyboard1.jpg" alt="Storyboard til kantinen..">
+            </section>
 
-       <section>
-        <h1>Hvilken værdi vil løsningen give virksomheden?</h1>
-        <p>Hvis man lavede en app til KEAs kantine, vil det blive nemmere for de studerende at holde sig opdateret på dagens ret. De studerende vil via appen kunne deltage i afstemninger og dermed have indflydelse på retterne, som vil gøre at kantinen tilpasses de studerenes behov. Dette vil nok betyde at flere
-           studerende til gøre brug af kantinen og Simply Cooking vil dermed nå ud til flere og opnå et større salg. 
-        </p>
-        <p>Hvis flere studerende benyttede kantinen vil flere studerende samles og der vil dermed skabe et bedre fællesskab. Et bedre fællesskab vil betyde at de sociale vil blive
-           stærkere på KEA, hvilket vil være med til at skabe et godt ry for KEA.</p>
-       </section>
-       
-       <section>
-        <h1>Hvilken værdi giver den målgruppen?</h1>
-        <ul>
-         <li>Spørg dem eksempelvis “hvad ville du give for det”</li>
-        </ul>
-        <p>Appen ville for det første have til formål at hjælpe de studerende på KEA. Den vil være med til at give dem et overblik over maden i kantinen og gøre det nemmere for de studerende at benytte kantinen. Men den vil også hjælpe selve kantinen, ved at skabe et nemt overblik over maden for de studerende og gøre det hele nemmere, vil det nok også øget salget af mad i kantinen. 
-        </p>
-        <p>Via appen vil de studerende få mere indflydelse og det bliver nemmere for kantinen til tilfredsstille de studerende. Menuen vil blive mere målrettet til de studerendes behov, da de vil have mulighed for at deltage i afstemningen om dagensret. Derudover vil et point system i appen kunne bidrage på det økonomiske, bare små ting,
-           som at kunne få hver 10 kop kaffe gratis vil vil få stor betydning for de fleste studerende.
-        </p>
-       </section>  
-       
-       <section>
-        <h1>Kan udviklingen lade sig gøre? Eller er vi afhængige af teknologi, der ikke er moden endnu?</h1>
-        <ul>
-         <li>Prøv at kvantificere (budget)</li>
-        </ul>
-        <p>Udviklingen af appen ville sagtens kunne lade sig gøre med nuværende teknologi. Der er tale om at skulle designe og programmer en simpel og enkel app,
-           som på nuværende tidspunkt skulle kunne benyttes af de studerende på KEA lygten 16.
-        </p>
-        <p>Udfordringen ville være samarbejdet med kantinen. Det ville kræve nogen ændringer i forhold hvordan kantinen fungere
-           i dag. Det ville kræve nogen mere faste priser i kantinen og en form for klippekort.
-           Samtidig vil det kræve at dem i kantinen er villig til at få opdateret appen fast hver morgen og
-           får sendt en del beskeder ud.
-        </p>
-       </section>
-       
-       <section>
-        <h1>Inden for hvilken tidshorisont kan det realiseres?</h1>
-        <p>Da kantinen allerede findes og fungere findes alt man skal bruge til at lave appen allerede.
-          Dette betyder at det egentlig kun er produktionstiden som der skal tages højde for, så et par måneder.
-        </p>
-       </section>
-       
-       <section>
-         <h1>Har andre allerede realiseret en tilsvarende løsning?</h1>
-         <p>
-          Da KEAs kantine ikke har nogen app i forvejen er der ikke nogen direkte konkurrenter.
-          Hvis man lavede en app til KEAs kantine vil det være den eneste app de studerende ville
-          kunne benytte sig af når de ville tjekke ugens menu osv.
-         </p>
-       </section>
-       
-     </section> <!--  koncept_kantinen slut -->
+            <section id="kantinen_video">
+                <h2>Usability test</h2>
+                <p class="link_ud"><a href="https://www.youtube.com/watch?v=cXSwGR3wync">Afspil video</a></p>
+            </section>
+
+            <section id="ide_grundlag">
+                <h2>Idé Grundlag</h2>
+                <ul>
+                    <li>Tilbyder:</li>
+                    <ul>
+                        <li>Oprettelse af bruger:
+                            <ul>
+                                <li>Navn</li>
+                                <li>Studienummer/mail</li>
+                                <li>Alder</li>
+                                <li>Køn</li>
+                                <li>Kortoplysninger - linket til mobilepay</li>
+                                <li>Præferencer</li>
+                            </ul>
+                        </li>
+                        <li>Oversigt over ugens menu</li>
+                        <li>
+                            <b>Loyalitetsprogram:</b>
+                            <ul>
+                                <li>Point system</li>
+                                <li>Efter loyalitet baseret på købshistorik</li>
+                                <li>Efter aktivitet i forbindelse med:
+                                    <ul>
+                                        <li>Afstemninger</li>
+                                        <li>Feedback på oplevelsen af det købte måltid</li>
+                                    </ul>
+                                </li>
+                                <li>Valuecards</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Medbestemmelse</b> fra brugergruppen
+                            <ul>
+                                <li>De studerendes maddag</li>
+                                <li>Ugentlig afstemning om kommende uges menu</li>
+                            </ul>
+                        </li>
+                        <li><b>Early bird tilbud</b> til dem, som bestiller inden kl. X eller de 10/20 første</li>
+                        <li>
+                            <b>Pushmeddelelser:</b>
+                            <ul>
+                                <li>“Maden er klar”</li>
+                                <li>“Godmorgen - i dag serveres ….”</li>
+                                <li>“Er I ved at være sultne? Kom ned i kantinen og nyd …. med os”</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p><b>Brugssituationer:</b></p>
+                    <ul>
+                        <li>Når man tager afsted om morgenen</li>
+                        <li>Når man begynder at blive sulten inden frokosttid</li>
+                    </ul>
+                </ul>
+            </section>
+
+            <section id="koncept_kantinen">
+                <h2>Konceptvalidering</h2>
+                <p><b>Brugerne/målgruppen</b></p>
+                <section>
+                    <h3>Hvem er målgruppen?</h3>
+                    <ul>
+                        <li>Kvantificer størrelsen på målgruppen - kan den skaleres op?</li>
+                    </ul>
+                    <p>
+                        Målgruppen for KEAntine app’en er på nuværende tidspunkt målrettet studerende på KEA Lygten 16. Fremadrettet ville man kunne videreudvikle appen, så den også kunne benyttes på de resterende KEA.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Forstår målgruppen vores løsning?</h3>
+                    <ul>
+                        <li>(gennem vores tests)</li>
+                    </ul>
+                    <p>Testpersonen forstod appens formål. Appen var meget simpel og lige til. Der var dog lidt forvirring omkring menupunktet “Se point”. Først skulle testpersonen lige forstå hele konceptet med point, hvad det drejede sig om og hvordan det fungerede. Da testpersonen klikkede sig ind på punktet forstod han princippet i at man kunne bruge nogen optjente point til at købe ting i kantinen, men der var dog igen lidt forvirring, denne gang over en proces bar, som testpersonen ikke helt kunne tyde hvad var.
+                    </p>
+                    <p>Punktet feedtback skabte også forvirring, hvad skal man give feedback på? Savner priser på appen.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Hvilken værdi vil løsningen give virksomheden?</h3>
+                    <p>Hvis man lavede en app til KEAs kantine, vil det blive nemmere for de studerende at holde sig opdateret på dagens ret. De studerende vil via appen kunne deltage i afstemninger og dermed have indflydelse på retterne, som vil gøre at kantinen tilpasses de studerenes behov. Dette vil nok betyde at flere studerende til gøre brug af kantinen og Simply Cooking vil dermed nå ud til flere og opnå et større salg.
+                    </p>
+                    <p>Hvis flere studerende benyttede kantinen vil flere studerende samles og der vil dermed skabe et bedre fællesskab. Et bedre fællesskab vil betyde at de sociale vil blive stærkere på KEA, hvilket vil være med til at skabe et godt ry for KEA.</p>
+                </section>
+
+                <section>
+                    <h3>Hvilken værdi giver den målgruppen?</h3>
+                    <ul>
+                        <li>Spørg dem eksempelvis “hvad ville du give for det”</li>
+                    </ul>
+                    <p>Appen ville for det første have til formål at hjælpe de studerende på KEA. Den vil være med til at give dem et overblik over maden i kantinen og gøre det nemmere for de studerende at benytte kantinen. Men den vil også hjælpe selve kantinen, ved at skabe et nemt overblik over maden for de studerende og gøre det hele nemmere, vil det nok også øget salget af mad i kantinen.
+                    </p>
+                    <p>Via appen vil de studerende få mere indflydelse og det bliver nemmere for kantinen til tilfredsstille de studerende. Menuen vil blive mere målrettet til de studerendes behov, da de vil have mulighed for at deltage i afstemningen om dagensret. Derudover vil et point system i appen kunne bidrage på det økonomiske, bare små ting, som at kunne få hver 10 kop kaffe gratis vil vil få stor betydning for de fleste studerende.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Kan udviklingen lade sig gøre? Eller er vi afhængige af teknologi, der ikke er moden endnu?</h3>
+                    <ul>
+                        <li>Prøv at kvantificere (budget)</li>
+                    </ul>
+                    <p>Udviklingen af appen ville sagtens kunne lade sig gøre med nuværende teknologi. Der er tale om at skulle designe og programmer en simpel og enkel app, som på nuværende tidspunkt skulle kunne benyttes af de studerende på KEA lygten 16.
+                    </p>
+                    <p>Udfordringen ville være samarbejdet med kantinen. Det ville kræve nogen ændringer i forhold hvordan kantinen fungere i dag. Det ville kræve nogen mere faste priser i kantinen og en form for klippekort. Samtidig vil det kræve at dem i kantinen er villig til at få opdateret appen fast hver morgen og får sendt en del beskeder ud.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Inden for hvilken tidshorisont kan det realiseres?</h3>
+                    <p>Da kantinen allerede findes og fungere findes alt man skal bruge til at lave appen allerede. Dette betyder at det egentlig kun er produktionstiden som der skal tages højde for, så et par måneder.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Har andre allerede realiseret en tilsvarende løsning?</h3>
+                    <p>
+                        Da KEAs kantine ikke har nogen app i forvejen er der ikke nogen direkte konkurrenter. Hvis man lavede en app til KEAs kantine vil det være den eneste app de studerende ville kunne benytte sig af når de ville tjekke ugens menu osv.
+                    </p>
+                </section>
+
+            </section>
+            <!--  koncept_kantinen slut -->
 
 
-    </section> <!--  Ide 1 slut -->
-    
-    <section id="ide2">
-      <header>
-       <h1>Idé 2 – Gitgudhub</h1> <!-- Vejlednings Idéen -->
-       <nav>
-        <ol>
-         <li><a href="#pain_point_vejledning">Pain Point</a></li>
-         <li><a href="#experience_map_vejledning">Experience Map</a></li>
-         <li><a href="#vejledning_skitse">Skitse</a></li>
-         <li><a href="#storyboard_vejledning">Storyboard</a></li>
-         <li><a href="#vejledning_video">Test Video</a></li>
-         <li><a href="#koncept_vejledning">Konceptvalidering</a></li> 
-         <!--   <li><a href=""></a></li>  Copy paste :-D  -->
-        </ol>
-       </nav>
-      </header>
-      <section id="pain_point_vejledning">
-        <h1>Pain point – Gitgudhub</h1>
-        <p>Praktik (og evt udlandsophold?)</p>
-        <p>De studerende på KEA føler at praktik-søgningen er en uoverskuelig proces og savner et værktøj, hvormed man kan få vejledning til at planlægge sin praktiksøgning step by step og få et overblik over mulige praktiksteder.</p>
-      </section>
-      
-      <section id="experience_map_vejledning">
-        <h1>Experience Map – Gitgudhub</h1>
-        <img src="bucket/experience-map/ide-valg-2.JPG" alt="Vejlednings ideen..." title="Praktik idéen...">
-      </section>
+        </section>
+        <!--  Ide 1 slut -->
 
-     <section id="vejledning_skitse">
-      <h1>Skitse – Gitgudhub</h1>
-      <img src="bucket/gitgudhub/brugssituation.jpg" alt="Skitse af Vejlednings appen...">    
-     </section>
-     
-     <section id="storyboard_vejledning">
-      <h1>Storyboard – Gitgudhub</h1>
-      <img src="bucket/gitgudhub/storyboard.jpg" alt="Storyboard til gitgudhub..">      
-     </section>
+        <section id="ide2">
+            <header>
+                <h1>Idé 2 – Gitgudhub</h1>
+                <!-- Vejlednings Idéen -->
+                <nav>
+                    <ol>
+                        <li><a href="#pain_point_vejledning">Pain Point</a></li>
+                        <li><a href="#experience_map_vejledning">Experience Map</a></li>
+                        <li><a href="#vejledning_skitse">Skitse</a></li>
+                        <li><a href="#storyboard_vejledning">Storyboard</a></li>
+                        <li><a href="#vejledning_video">Test Video</a></li>
+                        <li><a href="#koncept_vejledning">Konceptvalidering</a></li>
+                        <!--   <li><a href=""></a></li>  Copy paste :-D  -->
+                    </ol>
+                </nav>
+            </header>
+            <section id="pain_point_vejledning">
+                <h2>Pain point</h2>
+                <p>De studerende på KEA kan til tider føle sig fortabte i situationer efter de skemalagte timer, hvis en udfordring opstår og underviserne er gået. De studerende er frustrerede over den nuværende systematisering af vejledning, som er karakteriseret ved uendelig lang ventetid.</p>
+            </section>
 
-      <section id="vejledning_video">
-        <h1>Test video – Gitgudhub</h1>
-        <p class="link_ud"><a href="https://www.youtube.com/watch?v=d60yNahS_PI">Video</a></p>      
-      </section>
-      
-      <section id="koncept_vejledning">
-        <h1>Konceptvalidering – Gitgudhub</h1>
-        <p><b>Brugerne/målgruppen</b></p>
-        <section>
-         <h1>Hvem er målgruppen?</h1>
-         <ul>
-          <li>Kvantificer størrelsen på målgruppen - kan den skaleres op?</li>
-         </ul>
-         <p>
-          Studerende på MMD. Som udgangspunkt er produktet meget specifikt til denne målgruppe og kan derfor ikke skaleres op. Hvis opskalering er en prioritet,
-          kan app’en udvides til at omfatte flere studieretninger og fakulteter,
-          dette vil dog kræve udvidelse af app’en. Dette kan også foregå i form af opdateringer.
-         </p>
+            <section id="experience_map_vejledning">
+                <h2>Experience Map</h2>
+                <img src="bucket/experience-map/ide-valg-2.JPG" alt="Vejlednings ideen..." title="Praktik idéen...">
+            </section>
+
+            <section id="vejledning_skitse">
+                <h2>Skitse</h2>
+                <img src="bucket/gitgudhub/brugssituation.jpg" alt="Skitse af Vejlednings appen...">
+            </section>
+
+            <section id="storyboard_vejledning">
+                <h2>Storyboard</h2>
+                <img src="bucket/gitgudhub/storyboard.jpg" alt="Storyboard til gitgudhub..">
+            </section>
+
+            <section id="vejledning_video">
+                <h2>Usability test</h2>
+                <p class="link_ud"><a href="https://www.youtube.com/watch?v=d60yNahS_PI">Afspil video</a></p>
+            </section>
+
+            <section id="koncept_vejledning">
+                <h2>Konceptvalidering</h2>
+                <p><b>Brugerne/målgruppen</b></p>
+                <section>
+                    <h3>Hvem er målgruppen?</h3>
+                    <ul>
+                        <li>Kvantificer størrelsen på målgruppen - kan den skaleres op?</li>
+                    </ul>
+                    <p>
+                        Studerende på MMD. Som udgangspunkt er produktet meget specifikt til denne målgruppe og kan derfor ikke skaleres op. Hvis opskalering er en prioritet, kan app’en udvides til at omfatte flere studieretninger og fakulteter, dette vil dog kræve udvidelse af app’en. Dette kan også foregå i form af opdateringer.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Forstår målgruppen vores løsning?</h3>
+                    <p>Under test af en tidlig prototype, var der forvirring omkring app’ens formål. Med videre udvikling af produktet, med særligt fokus på at designe en mere brugervenlig interface, vil målgruppen i højere grad forstå løsningen.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Hvilken værdi vil løsningen give virksomheden?</h3>
+                    <p>
+                        Indledningsvis vil løsningen være et værktøj for de studerende, der kan hjælpe i deres studie. Hensigten er at dette skal være med til at aflaste underviserne, øge tilfredsheden og højne det faglige niveau blandt de studerende. Dette vil i den lange ende gøre studiet mere attraktivt for nye studerende.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Hvilken værdi giver den målgruppen?</h3>
+                    <p>
+                        App’en er et værktøj målgruppen kan bruge til at give og modtage hjælp til løsning af faglige udfordring. Udover det konkrete værktøj kan løsningen have en mulig bivirkning at der skabes en større fællesskabsfølelse når de studerende overkommer udfordringer i fællesskab.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Kan udviklingen lade sig gøre?</h3>
+                    <p>
+                        Produktet er muligt at løse med nuværende teknologi. Med en fuldt udviklet app til Lygten 16 og MMD uddannelsen, kan den med relativ lethed udvides til andre fakulteter og uddannelser.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Inden for hvilken tidshorisont kan det realiseres?</h3>
+                    <p>Højst sandsynligt inden for et par måneder. Funktionerne i app’ indeholder en forholdsvis simpel mappe og undermappestruktur samt en vejledningskø, som allerede eksisterer. Selvom det er udfordrende at give et konkret bud på en tidshorisont, er dette ikke et over-ambitiøst projekt og kan derfor realiseres relativt hurtigt.</p>
+                </section>
+
+                <section>
+                    <h3>Har andre allerede realiseret en tilsvarende løsning?</h3>
+                    <p>Som sådan er der ikke andre lignende produkter, men der er en udfordring i at målgruppen kan finde på at bruge andre platforme til at kommunikere med hinanden angående lignende issues - eksempelvis facebookgrupper o.lign. En stor del af app’ens success afhænger af om målgruppen finder dens brug for besværlig sammenlignet med de ad hoc løsninger de benytter sig af på nuværende tidspunkt. <br> Derudover findes der mange substituerende løsninger, hvor studerende kan finde hjælp til specifikke problemer, i form af w3schools, stackoverflow, lynda osv. En årsag til at der ikke findes lignende app’s kan være fordi, den fysiske handling det er at finde sin smartphone frem bliver vurderet til at være for upraktisk, hvis man i forvejen sidder foran sin computer.
+                    </p>
+                </section>
+
+            </section>
+
         </section>
-        
-        <section>
-         <h1>Forstår målgruppen vores løsning?</h1>
-         <p>Under test af en tidlig prototype, var der forvirring omkring app’ens formål. Med videre udvikling af produktet,
-         med særligt fokus på at designe en mere brugervenlig interface, vil målgruppen i højere grad forstå løsningen.
-         </p>
+        <!--  Ide 2 slut -->
+
+        <section id="ide3">
+            <header>
+                <h1>Idé 3 – Kea Intern</h1>
+                <nav>
+                    <ol>
+                        <li><a href="#pain_point_praktik">Pain Point</a></li>
+                        <li><a href="#experience_map_praktik">Experience Map</a></li>
+                        <li><a href="#praktik_skitse">Skitse</a></li>
+                        <li><a href="#praktik_video">Test Video</a></li>
+                        <li><a href="#koncept_praktik">Konceptvalidering</a></li>
+                        <!--   <li><a href=""></a></li> -->
+                    </ol>
+                </nav>
+            </header>
+
+            <section id="pain_point_praktik">
+                <h2>Pain point</h2>
+                <p>De studerende på KEA føler at praktik-søgningen er en uoverskuelig proces og savner et værktøj, hvormed man kan få vejledning til at planlægge sin praktiksøgning step by step og få et overblik over mulige praktiksteder.</p>
+
+            </section>
+
+            <section id="experience_map_praktik">
+                <h2>Experience Map</h2>
+                <img src="bucket/experience-map/ide-valg-3.JPG" alt="Vejlednings ideen..." title="Praktik idéen...">
+            </section>
+
+            <section id="praktik_skitse">
+                <h2>Skitse</h2>
+                <img src="bucket/keaintern/brugssituation.jpg" alt="Skitse af praktik appen...">
+            </section>
+
+            <section id="praktik_video">
+                <h2>Usability test</h2>
+                <p class="link_ud"><a href="https://www.youtube.com/watch?v=bwgDRWjA-Ns">Afspil video</a></p>
+            </section>
+
+            <section id="koncept_praktik">
+                <h2>Konceptvalidering</h2>
+
+                <p>KEA intern’s formål er at give de studerende et redskab, hvormed man kan sænke kompleksitetsniveauet omkring praktiksøgningsprocessen. Dette gøres ved at give de studerende en platform, hvor de kan få overblik over og rådgivning til alle dele af praktiksøgningsprocessen, få overblik over udbuddet og søge med få klik. Ideen er at hver enkelt studerende opretter sig og udfærdiger et personligt visitkort, der kort karakteriserer vedkommende med al formel information, der er påkrævet i en ansøgningsproces samt angiver deres interesser og kompetencer. KEA intern tilbyder så følgende undermenuer: Opslagstavlen - et overblik over aktuelle praktikstillinger, Guides - en samling af relevante guides, som kan rådgive og hjælpe den studerende til at optimere sin praktiksøgnings-proces samt Virksomhedsdatabasen - et komplet overblik over mulige praktikvirksomheder.
+                </p>
+                <section>
+                    <h3>Hvem er målgruppen?</h3>
+                    <p>På nuværende tidspunkt er applikationen KEA intern målrettet studerende på KEA’s campus’er fordelt over København. Applikationens koncept og formål ville med god sandsynlighed kunne skaleres op på en større målgruppe, der omfatter samtlige af landets uddannelsesinstitutioner, som har praktik som en integreret del af deres uddannelser, hvor praktiksøgningen er fortrinsvist en selvstændig proces.
+                    </p>
+                    <p>Derudover kunne man forestille sig en udvidelse af app’en, hvor man aktivt inddrager potentielle praktik-virksomheder, således at app-løsningen også fungerede som redskab til virksomheder, der søger praktikanter. På denne måde vil app’en få en tovejs networking-dimension, hvor aspirerende praktikanter og virksomheder, kan få overblik over udbuddet og skabe kontakt med få klik.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Forstår målgruppen vores løsning?</h3>
+                    <p>Testpersonen i usability-testen var begejstret for KEA intern’s koncept og forstod at app’ens formål, er at agere hjælpe-værktøj for studerende i processen omkring praktiksøgning. Hun fandt de forskellige menupunkter relevante og værdiskabende for hendes fremtidige praktiksøgnings-proces.
+                    </p>
+                    <p>(Skal uddybes, når vi har bearbejdet vores data fra testen)</p>
+                </section>
+
+                <section>
+                    <h3>Hvilken værdi vil løsningen give virksomheden?</h3>
+                    <p>Værdien KEA intern kan skabe for KEA som virksomhed, er primært at sænke usikkerheden, der hersker blandt de studerende, når det gælder praktiksøgnings-processen. Dette vil bidrage til at øge trivslen blandt de studerende og dermed sænke frafald, som har sin begrundelse i manglende overblik og struktur, og den forbundne fortvivlelse og stress.
+                    </p>
+                    <p>
+                        Ligeledes er ideen at der skabes en platform, som vejlederne ligeledes kan tilgå, hvor de kan få et overblik over de studerende, de assisterer i processen, booke vejledningsmøder og allerede inden første møde, kan forberede sig på vejledningsprocessen af den enkelte studerende.
+                    </p>
+                    <p>
+                        Derudover kan man argumentere for at KEA har potentiale til at opnå bedre branding blandet deres samarbejdspartnere ved, at kvaliteten af ansøgningerne og forberedelsen af de studerende til deres fremtidige praktik bliver bedre.
+                    </p>
+                    <p>
+                        Hvis man udvider app’ens horisont til at indbefatte en dimension for praktik-virksomhederne, hvor de kan tilgå sitet og udvælge attraktive kandidater, vil dette ydermere bidrage til KEA’s branding i erhvervslivet og fordre et tættere samarbejde.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Hvilken værdi giver den målgruppen?</h3>
+                    <p>
+                        KEA intern skaber værdi for målgruppen i og med at der skabes et redskab omkring praktiksøgnings-processen, som kan hjælpe de studerende til at danne sig et overblik over processen, søge råd og vejledning dertil og overskueliggøre det aktuelle udbud, udvalget og mulighederne ift. valg af praktiksted.
+                    </p>
+                    <p>
+                        Dette redskab vil bidrage til, at de studerende oplever, at processen omkring praktiksøgning, bliver mere overskuelig og at de samtidig bliver mere selvhjulpne, dygtigere og mere effektive til at søge praktik. Dette betyder i sidste ende at trivslen blandt eleverne påvirkes i positiv retning, da processen omkring praktiksøgning simplificeres, smidiggøres og effektiviseres.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Kan udviklingen lade sig gøre?</h3>
+                    <p>Applikationen kan sagtens skabes og implementeres med den nuværende teknologi.</p>
+                    <p>Meget af den fornødne data, som applikationen benytter sig af er data, som KEA allerede har tilgængeligt på deres website og KEA’s jobportal.</p>
+                    <p>Udfordringerne som implementering af KEA intern står overfor, begrænser sig derfor til udvikling af kodningen for app’ens interface og udvikling af content til Guide-sektionen. Her vil der være forbundet omkostninger til fornøden arbejdskraft.
+                    </p>
+                </section>
+                <section>
+                    <h3>Inden for hvilken tidshorisont kan det realiseres?</h3>
+                    <p>Det estimeres at app’ens implementering vil tage omkring 4-6 uger med udvikling af content og interface samt beta-testing på produktet.</p>
+                </section>
+                <section>
+                    <h3>Har andre allerede realiseret en tilsvarende løsning?</h3>
+                    <p>Man kan argumentere for, at der forefindes delløsninger på nogle af app’ens funktioner. Et utal af udbydere - eksempelvis uddannelsesguiden, fagforeninger, privatejede konsulentvirksomheder, jobcentre og studievejledninger - udbyder dele af den rådgivende funktion i KEA intern. Når det gælder videreformidlingen af praktikopslag, kan man opdele konkurrenterne i 2 grupper:
+                    </p>
+                    <ol>
+                        <li>Facebookgrupper - ofte målrettet efter erhverv eller branche</li>
+                        <li>Websites - eksempelvis herunder praktik.dk, praktikpladsen.dk, graduateland.com, ofir.dk, jobindex.dk etc.</li>
+                    </ol>
+                    <p>Sidst, når det gælder praktik-håndtering, findes der en landsdækkende platform, som agerer bindeled mellem uddannelsesinstitution, virksomheder og den studerende på De Danske Professionshøjskoler; Praktikportalen. Praktikportalen udbyder en løsning, hvor virksomhederne selv opretter praktikopslag direkte i portalen og ved et simpelt, prioriteret valg sendes den studerendes ansøgning afsted. Derfra fordeler Praktikportalen de studerende ud på de udbudte virksomheder. Denne service er bygget på et solidt fundament af faste samarbejdsaftaler, hvor fordelingen af praktikpladser ikke er baseret på faglig kunnen, men snarere de studerendes prioritering og en vilkårlig fordeling.
+                    </p>
+                    <p>Argumentet er her, at en praktiksøgnings-proces på et uddannelsessted som KEA er langt mere komplekst og selvstændigt i sin form i dag end det er tilfældet på De Danske Professionshøjskoler.
+                    </p>
+                    <p>
+                        På det nuværende marked for apps er der endnu ikke udviklet denne type integrerede løsning, når det gælder praktiksøgning. Med KEA intern tilbydes både en personlig profil, som præsenterer den studerendes ansigt udadtil for virksomhederne og giver den studerende et overblik over kommende praktikperioder og møder med vejleder, guides til hele praktiksøgnings-processen, en komplet liste over KEA’s samarbejdspartnere, en opslagstavle med aktuelle praktikopslag samt en funktion som linker den studerende med relevante praktikopslag baseret på deres personlige profil.
+                    </p>
+                    <p>Flere delelementer udbydes af forskellige udbydere på kryds og tværs, men argumentet er her, at dette er en skræddersyet løsning, specifikt designet til uddannelsessteder med en mere kompleks proces, når det kommer til praktiksøgning.
+                    </p>
+
+                </section>
+
+            </section>
+
         </section>
-        
-        <section>
-         <h1>Hvilken værdi vil løsningen give virksomheden?</h1>
-         <p>
-          Indledningsvis vil løsningen være et værktøj for de studerende, der kan hjælpe i deres studie. Hensigten er at dette skal være med til at
-          aflaste underviserne og øge tilfredsheden og højne det faglige niveau blandt de studerende, som i den lange ende vil gøre studiet mere
-          attraktivt.</p>
-        </section>
-        
-        <section>
-         <h1>Hvilken værdi giver den målgruppen?</h1>
-         <p>
-          App’en er et værktøj målgruppen kan bruge til at give og modtage hjælp til løsning af faglige udfordring. Udover det konkrete værktøj
-          kan løsningen have en mulig bivirkning at der skabes en større fællesskabsfølelse når de studerende overkommer udfordringer i fællesskab.
-         </p>
-        </section>
-        
-        <section>
-         <h1>Kan udviklingen lade sig gøre?</h1>
-         <p>
-          Produktet er ikke umuligt at løse med nuværende teknologi. Med en fuldt udviklet app til lygten 16 og MMD uddannelsen, kan den med
-          relativ lethed udvides til andre fakulteter og uddannelser i form af tilføjelse af underkategorier.
-          </p>
-        </section>
-        
-        <section>
-         <h1>Inden for hvilken tidshorisont kan det realiseres?</h1>
-         <p>Højst sandsynligt inden for et par måneder (er ikke helt sikker på hvor lang tid det tager at udvikle en app så dette er et umiddelbart gæt)
-            Funktionerne i app’ indeholder en forholdsvis simpel mappe og undermappestruktur og en vejledningskø, som allerede eksisterer.
-            Selvom det er udfordrende at give et konkret bud på en tidshorisont, er dette ikke et synderligt ambitiøst projekt og kan derfor
-            realiseres relativt hurtigt.</p>
-        </section>
-        
-        <section>
-         <h1>Har andre allerede realiseret en tilsvarende løsning?</h1>
-         <p>Som sådan er der ikke andre lignende produkter, men der er en udfordring i form af at målgruppen kan finde på at bruge andre platforme
-            til at kommunikere med hinanden, for eksempel facebookgrupper og lignende. En stor del af app’ens success afhænger om målgruppen finder
-            dens brug for besværlig sammenlignet med de ad hoc løsninger de benytter sig af på nuværende tidspunkt.
-            Derudover findes der mange substituerende løsninger, hvor studerende kan finde hjælp til specifikke problemer, i form af w3schools,
-            stackoverflow, lynda osv.
-            En årsag til at der ikke findes lignende app’s kan være fordi, den fysiske handling det er at finde sin smartphone frem bliver
-            vurderet til at være for upraktisk, hvis man i forvejen sidder foran sin computer.
-         </p>
-        </section>
-        
-      </section>
-      
-    </section> <!--  Ide 2 slut -->
-    
-    <section id="ide3">
-      <header>
-       <h1>Idé 3 – Kea Intern</h1>
-       <nav>
-        <ol>
-         <li><a href="#pain_point_praktik">Pain Point</a></li>
-         <li><a href="#experience_map_praktik">Experience Map</a></li>
-         <li><a href="#praktik_skitse">Skitse</a></li>
-         <li><a href="#praktik_video">Test Video</a></li>
-         <li><a href="#koncept_praktik">Konceptvalidering</a></li>
-         <!--   <li><a href=""></a></li> -->
-        </ol>
-       </nav>
-      </header>
-      
-      <section id="pain_point_praktik">
-        <h1>Vejledning & tutors (Pain Point) – Kea Intern</h1>
-        <p>De studerende på KEA kan til tider føle sig fortabte i situationer efter de skemalagte timer, hvis en udfordring opstår og underviserne er gået. 
-        De studerende er frustrerede over den nuværende systematisering af vejledning, som er karakteriseret ved uendelig lang ventetid.</p>
-      </section>
-      
-    <section id="experience_map_praktik">
-      <h1>Experience Map – Kea Intern</h1>
-      <img src="bucket/experience-map/ide-valg-3.JPG" alt="Vejlednings ideen..." title="Praktik idéen...">
-    </section>
-   
-     <section id="praktik_skitse">
-      <h1>Skitse – Kea Intern</h1>
-      <img src="bucket/keaintern/brugssituation.jpg" alt="Skitse af praktik appen...">    
-     </section>
-   
-    <section id="praktik_video">
-      <h1>Test video – Kea Intern</h1>
-      <p class="link_ud"><a href="https://www.youtube.com/watch?v=bwgDRWjA-Ns">Video</a></p>      
-    </section>
-    
-    <section id="koncept_praktik">
-     <h1>Konceptvalidering – Kea Intern</h1>
-     <p><b>Formål:</b></p>
-     <p>KEA intern’s formål er at give de studerende et redskab, hvormed man kan sænke kompleksitetsniveauet omkring praktiksøgningsprocessen.
-        Dette gøres ved at give de studerende en platform, hvor de kan få overblik over og rådgivning til alle dele af praktiksøgningsprocessen,
-        få overblik over udbuddet og søge med få klik. Ideen er at hver enkelt studerende opretter sig og udfærdiger et personligt visitkort,
-        der kort karakteriserer vedkommende med al formel information, der er påkrævet i en ansøgningsproces samt angiver deres interesser og kompetencer.
-        KEA intern tilbyder så følgende undermenuer: Opslagstavlen - et overblik over aktuelle praktikstillinger, Guides - en samling af relevante guides,
-        som kan rådgive og hjælpe den
-        studerende til at optimere sin praktiksøgnings-proces samt Virksomhedsdatabasen - et komplet overblik over mulige praktikvirksomheder.
-     </p>
-     <section>
-       <h1>Hvem er målgruppen?</h1>
-       <p>På nuværende tidspunkt er applikationen KEA intern målrettet studerende på KEA’s campus’er fordelt over København. 
-          Applikationens koncept og formål ville med god sandsynlighed kunne skaleres op på en større målgruppe, der omfatter samtlige
-          af landets uddannelsesinstitutioner, som har praktik som en integreret del af deres uddannelser, hvor praktiksøgningen er fortrinsvist
-          en selvstændig proces. 
-       </p>
-       <p>Derudover kunne man forestille sig en udvidelse af app’en, hvor man aktivt inddrager potentielle praktik-virksomheder,
-          således at app-løsningen også fungerede som redskab til virksomheder, der søger praktikanter. På denne måde vil app’en få en
-          tovejs networking-dimension, hvor aspirerende praktikanter og virksomheder, kan få overblik over udbuddet og skabe kontakt med få klik.
-       </p>
-     </section>
-     
-     <section>
-      <h1>Forstår målgruppen vores løsning?</h1>
-      <p>Testpersonen i usability-testen var begejstret for KEA intern’s koncept og forstod at app’ens formål, er at agere hjælpe-værktøj for
-         studerende i processen omkring praktiksøgning. Hun fandt de forskellige menupunkter relevante og værdiskabende for hendes fremtidige
-         praktiksøgnings-proces.
-      </p>
-      <p>(Skal uddybes, når vi har bearbejdet vores data fra testen)</p>
-     </section>
-     
-     <section>
-      <h1>Hvilken værdi vil løsningen give virksomheden?</h1>
-      <p>Værdien KEA intern kan skabe for KEA som virksomhed, er primært at sænke usikkerheden, der hersker blandt de studerende,
-         når det gælder praktiksøgnings-processen. Dette vil bidrage til at øge trivslen blandt de studerende og dermed sænke frafald,
-         som har sin begrundelse i manglende overblik og struktur, og den forbundne fortvivlelse og stress.
-      </p>
-      <p>
-       Ligeledes er ideen at der skabes en platform, som vejlederne ligeledes kan tilgå, hvor de kan få et overblik over de studerende,
-       de assisterer i processen, booke vejledningsmøder og allerede inden første møde, kan forberede sig på vejledningsprocessen af
-       den enkelte studerende.
-      </p>
-      <p>
-       Derudover kan man argumentere for at KEA har potentiale til at opnå bedre branding blandet deres samarbejdspartnere ved,
-       at kvaliteten af ansøgningerne og forberedelsen af de studerende til deres fremtidige praktik bliver bedre. 
-      </p>
-      <p>
-       Hvis man udvider app’ens horisont til at indbefatte en dimension for praktik-virksomhederne, hvor de kan tilgå sitet og
-       udvælge attraktive kandidater, vil dette ydermere bidrage til KEA’s branding i erhvervslivet og fordre et tættere samarbejde. 
-      </p>
-     </section>
-     
-     <section>
-      <h1>Hvilken værdi giver den målgruppen?</h1>
-      <p>
-       KEA intern skaber værdi for målgruppen i og med at der skabes et redskab omkring praktiksøgnings-processen,
-       som kan hjælpe de studerende til at danne sig et overblik over processen, søge råd og vejledning dertil og
-       overskueliggøre det aktuelle udbud, udvalget og mulighederne ift. valg af praktiksted. 
-      </p>
-      <p>
-       Dette redskab vil bidrage til, at de studerende oplever, at processen omkring praktiksøgning, bliver mere overskuelig og at
-       de samtidig bliver mere selvhjulpne, dygtigere og mere effektive til at søge praktik. Dette betyder i sidste ende at trivslen
-       blandt eleverne påvirkes i positiv retning, da processen omkring praktiksøgning simplificeres, smidiggøres og effektiviseres. 
-      </p>
-     </section>
-     
-     <section>
-      <h1>Kan udviklingen lade sig gøre? Eller er vi afhængige af teknologi, der ikke er moden endnu?</h1>
-      <p>Applikationen kan sagtens skabes og implementeres med den nuværende teknologi.</p>
-      <p>Meget af den fornødne data, som applikationen benytter sig af er data, som KEA allerede har tilgængeligt på deres website og KEA’s jobportal.</p>
-      <p>Udfordringerne som implementering af KEA intern står overfor, begrænser sig derfor til udvikling af kodningen for app’ens interface
-         og udvikling af content til Guide-sektionen. Her vil der være forbundet omkostninger til fornøden arbejdskraft. 
-      </p>
-     </section>
-     <section>
-      <h1>Inden for hvilken tidshorisont kan det realiseres?</h1>
-      <p>Det estimeres at app’ens implementering vil tage omkring 4-6 uger med udvikling af content og interface samt beta-testing på produktet.</p>
-     </section>
-     <section>
-      <h1>Har andre allerede realiseret en tilsvarende løsning?</h1>
-      <p>Man kan argumentere for, at der forefindes delløsninger på nogle af app’ens funktioner. 
-         Et utal af udbydere - eksempelvis uddannelsesguiden, fagforeninger, privatejede konsulentvirksomheder, jobcentre og studievejledninger - udbyder dele af den rådgivende funktion i KEA intern. 
-         Når det gælder videreformidlingen af praktikopslag, kan man opdele konkurrenterne i 2 grupper:
-      </p>
-      <ol>
-       <li>Facebookgrupper - ofte målrettet efter erhverv eller branche</li>
-       <li>Websites - eksempelvis herunder praktik.dk, praktikpladsen.dk, graduateland.com, ofir.dk, jobindex.dk etc.</li>
-      </ol>
-      <p>Sidst, når det gælder praktik-håndtering, findes der en landsdækkende platform, som agerer bindeled mellem uddannelsesinstitution,
-         virksomheder og den studerende på De Danske Professionshøjskoler; Praktikportalen. Praktikportalen udbyder en løsning,
-         hvor virksomhederne selv opretter praktikopslag direkte i portalen og ved et simpelt, prioriteret valg sendes den studerendes
-         ansøgning afsted. Derfra fordeler Praktikportalen de studerende ud på de udbudte virksomheder. Denne service er bygget på et solidt
-         fundament af faste samarbejdsaftaler, hvor fordelingen af praktikpladser ikke er baseret på faglig kunnen, men snarere de studerendes
-         prioritering og en vilkårlig fordeling.
-      </p>
-      <p>Argumentet er her, at en praktiksøgnings-proces på et uddannelsessted som KEA er langt mere komplekst og selvstændigt i sin form i dag
-         end det er tilfældet på De Danske Professionshøjskoler. 
-      </p>
-      <p>
-         På det nuværende marked for apps er der endnu ikke udviklet denne type integrerede løsning, når det gælder praktiksøgning. Med KEA intern
-         tilbydes både en personlig profil, som præsenterer den studerendes ansigt udadtil for virksomhederne og giver den studerende et overblik
-         over kommende praktikperioder og møder med vejleder, guides til hele praktiksøgnings-processen, en komplet liste over KEA’s
-         samarbejdspartnere, en opslagstavle med aktuelle praktikopslag samt en funktion som linker den studerende med relevante praktikopslag
-         baseret på deres personlige profil. 
-      </p>
-      <p>Flere delelementer udbydes af forskellige udbydere på kryds og tværs, men argumentet er her, at dette er en skræddersyet løsning,
-         specifikt designet til uddannelsessteder med en mere kompleks proces, når det kommer til praktiksøgning.
-      </p>
-      <section>
-       <h1>Valg af idé</h1>
-       <p>Gruppen har valgt at gå videre med med “KEA-Intern” idéen. Gennem benchmarking vandt denne idé med en score på 8,4 mens de to andre
-          havde en score på 7,5 og 5,7. KEA-Intern havde højeste score i fire ud af seks kategorier: Målgruppens størrelse, skalerbarhed, værdi
-          for virksomheden og konkurrence. Disse scores blev uddelt gennem intern diskussion og vurdering i gruppen baseret på ovenstående
-          konceptvalidering. Efterfølgende er gruppen blevet opmærksomme på at der er lignende website baseret løsninger for andre uddannelser,
-          hvilket er en hindring for at udvide KEA-Intern til andre institutioner, da der vil være en øget konkurrence. Gruppen har dog valgt at
-          fortsætte med denne idé, da der på nuværende tidspunkt stadig ikke er en samlet løsning specifikt for KEA.
-          Derudover var der i målgruppen også mest lyst til at fortsætte med denne idé, baseret på faglig og personlig interesse.
-       </p>
-      </section>
-     </section>
-     
-     <section>
-      <h1>Pitch</h1>
-      <p><b>Problem:</b></p>
-      <p>Processen omkring at søge praktik kan være kilde til frustration og fortvivlelse for både vejledere og studerende.
-         Den fornødne informationsindsamling er spredt udover flere forskellige platforme og processen er meget selvkørende for de studerende.
-         Derfor ønsker vi:
-      </p>
-      <p><b>Vision:</b></p>
-      <p>At skabe en samlet og skræddersyet løsning til praktiksøgning, som skal agere bindeled mellem studerende, virksomheder og vejledere.</p>
-      <p>KEA intern’s formål er at tilbyde et skræddersyet redskab, hvormed man kan sænke kompleksitetsniveauet omkring praktiksøgningsprocessen.</p>
-      <p>Det gøres ved at give de studerende en platform, hvor de kan få overblik over og rådgivning til alle dele af praktiksøgnings-processen,
-         få overblik over udbuddet og søge med få klik.
-      </p>
-      <p>Hver enkelt studerende opretter sig og udfærdiger et personligt visitkort, der kort karakteriserer vedkommende med al formel information,
-         der er påkrævet i en ansøgningsproces samt angiver deres interesser og kompetencer.
-      </p>
-      <p>Det personlige visitkort fungerer således som den studerendes ansigt udadtil overfor potentielle praktik-virksomheder.
-         Derudover fungerer den personlige profil, som et værktøj, der gør at den studerende nemt kan skabe sig overblik over sin ansøgningsproces;
-      </p>
-      <p>Man kan uploade og administrere CV, motiverede ansøgninger, se information om kommende praktikperioder, tilknyttede
-         vejledere og vejledningsmøder samt løbende holde sig opdateret på aktuelle praktikopslag, der matcher den studerendes personlige profil.
-      </p>
-      <p>Derudover tilbyder KEA intern følgende undermenuer i sin interface:</p>
-      <ol>
-       <li><b>Opslagstavlen</b> - et overblik over aktuelle praktikstillinger.</li>
-       <li><b>Guides</b> - en samling af relevante guides, som kan rådgive og hjælpe den studerende til at optimere sin praktiksøgnings-proces samt</li>
-       <li><b>Virksomhedsdatabasen</b> - et komplet overblik over mulige praktikvirksomheder.</li>
-      </ol>
-      <p>Udover at være en løsning, som søger at give KEA’s studerende værktøjerne til at blive mere selvhjulpne, effektive og skarpere i
-         deres ansøgningsproces og branding af sig selv, er visionen som nævnt, at denne app skal agere bindeled mellem de tre involverede
-         parter i praktiksøgnings-processen; studerende, vejleder og virksomhed.
-      </p>
-      <p>Således vil alle tre parter kunne tilgå app’en og nemt med få klik indhente al relevant information og skabe sig overblik;
-         Vejledere vil kunne danne sig overblik over den vifte af studerende, de skal være vejledere for, booke og administrere møder og følge
-         den studerendes ansøgningsproces via den personlige profil.
-      </p>
-      <p>Praktikvirksomheder vil kunne poste praktikopslag, som løbende matches med kvalificerede studerende, hvilket gør det muligt for
-         virksomhederne proaktivt at finde den rette kandidat til deres praktikstilling.
-      </p>
-      <p>Med KEA intern får KEA et unikt og skræddersyet værktøj til gavn for alle parter i praktiksøgnings-processen, som ikke alene smidiggør,
-         effektiviserer og skaber overblik over processen fra start til slut, men også skaber rammerne for at det optimale praktikmatch opnås og
-         at KEA bliver synonym med de stærkeste praktik-kandidater på markedet.
-      </p>
-     </section>
-    </section>
-      
-    </section> <!--  Ide 3 slut -->
-    
-    <div class="article_sections_divED">
-    <section id="experience_maps">
-      <h1>Experience Map – (For alle idéer)</h1>
-      <img src="bucket/experience-map/experience-map.jpg" alt="Experience mappen, før valg af idé" title="Experience mappen, før valg af idé">
-      <ol>
-       <li><img src="bucket/experience-map/ide-valg-2.JPG" alt="Kantine ideen..." title="Kantine ideen..."></li>
-       <li><img src="bucket/experience-map/ide-valg-1.JPG" alt="Vejlednings ideen..." title="Vejlednings ideen..."></li>
-       <li><img src="bucket/experience-map/ide-valg-3.JPG" alt="Praktik ideen..." title="Praktik ideen..."></li>
-      </ol>
-    </section>
-    <section id="persona">
-      <h1>Persona  – (For alle idéer)</h1>
-      <p><b>Jonathan → Foto</b></p>
-      <p><b>Demografi:</b></p>
-      <p><b>Alder:</b> <i>22 år</i></p>
-      <p><b>Køn:</b> <i>Mand</i></p>
-      <p><b>Bopæl:</b> <i>Vesterbro - bor til leje</i></p>
-      <p><b>Beskæftigelse:</b> <i>Studerende på KEA med studiejob på Halifax</i></p>
-      <section>
-        <h1>Beskrivelse:</h1>
-        <p>Jonathan er en ung fyr på 22 år, som studerer MMD på KEA. Han elsker at være social og deltager tit i de sociale arrangementer, som KEA tilbyder. Han lider tit af fomo, hvis han ikke kan deltage og har derfor svært ved at sige nej til en god fest.</p>
-        <p>Han er en kreativ sjæl, som er vild med at tegne. Hans primære interesse er indenfor markedsføring og branding. Han har søgt ind på MMD, for at gøre karriere indenfor reklamebranchen. Jonathan er en middel-ambitiøs studerende - han ønsker ikke at studiet skal fylde for meget, så han ikke har tid til sine venner. Omvendt oplever han udfordringer omkring at studiet er for high-paced. Han føler derfor til tider ikke at han kan følge med. Dertil føler han også ofte, at han mister overblikket i informationsstrømmene på studiet. Han savner en måde, hvorpå man kan skabe et overblik i kaos.</p>
-        <p>Udover han interesser indenfor markedsføring og branding, er Jonathan også en stor madentusiast og livsnyder. Når han hænger ud med sine venner, nyder han derfor at lade mad være omdrejningspunktet. Hans gutter har en mandeloge, hvor de mødes en gang om måneden - enten ude eller hos hinanden, hvor værten står for menuen. Han er altid frisk på at eksperimentere i køkkenet. Jonathan har derfor også visse standarder, for hvad han har lyst til at spise. Det skal være sundt, men vigtigst af alt; det skal smage af noget. Jonathan føler sig ofte uinspireret over udvalget af omkringliggende spisesteder i nær radius af KEA. Han synes hverken at de lever op til hans præferencer eller pengepung. Dette har resulteret i at han som ofte vælger at planlægge og forberede sin frokost hjemmefra. Han går dog lidt og drømmer om en kantineordning, som var til at betale og som tilbød et varieret og omskifteligt udvalg.</p>
-        <p>Nettet er en naturlig del af hans hverdag. Han benytter det som redskab til at kommunikere med venner, underholdning, uddannelse, job og informationssøgning. Dette sker på tværs af forskellige platforme - primært computer og smartphone.</p>
-      </section>
-    </section>
-    </div>
-    <div class="article_sections_divED">
-    <section id="valg_af_ide">
-     <h1>Valg af idé</h1>
-     
-      <section id="benchmark">
-        <h1>Benchmark</h1>
-        <div class="table_wrap">
-        <table>
-          <tr><td></td><td>Målgruppens størrelse</td><td></td><td>Målgruppens skalerbarhed</td><td></td><td>Værdien for virksomheden</td><td></td><td>Værdien for målgruppen</td><td></td><td>Realiserbarhed</td><td></td><td>Konkurrence</td><td></td><td><b>Total</b></td></tr>
-          <tr><td></td><td>Vægtning</td><td>Score</td><td>Vægtning</td><td>Score</td><td>Vægtning</td><td>Score</td><td>Vægtning</td><td>Score</td><td>Vægtning</td><td>Score</td><td>Vægtning</td><td>Score</td><td></td></tr>
-          <tr><td>Keantinen</td><td>0,2</td><td>3</td><td>0,4</td><td>2</td><td>0,5</td><td>1</td><td>1</td><td>2</td><td>0,8</td><td>1</td><td>0,5</td><td>2</td><td><b>5,7</b></td></tr>
-          <tr><td>Gitgudhub</td><td>0,2</td><td>1</td><td>0,4</td><td>1</td><td>0,5</td><td>2</td><td>1</td><td>3</td><td>0,8</td><td>3</td><td>0,5</td><td>1</td><td><b>7,5</b></td></tr>
-          <tr><td>kea intern</td><td>0,2</td><td>3</td><td>0,4</td><td>3</td><td>0,5</td><td>3</td><td>1</td><td>2</td><td>0,8</td><td>2</td><td>0,5</td><td>3</td><td><b>8,4</b></td></tr>
-         </table>
+        <!--  Ide 3 slut -->
+
+
+        <div class="article_sections_divED">
+            <section id="valg_af_ide">
+                <header>
+                    <h1>Valg af idé</h1>
+                </header>
+
+                <section id="benchmark">
+                    <h2>Benchmark</h2>
+                    <div class="table_wrap">
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td><b>Målgruppens størrelse</b></td>
+                                <td></td>
+                                <td><b>Målgruppens skalerbarhed</b></td>
+                                <td></td>
+                                <td><b>Værdien for virksomheden</b></td>
+                                <td></td>
+                                <td><b>Værdien for målgruppen</b></td>
+                                <td></td>
+                                <td><b>Realiserbarhed</b></td>
+                                <td></td>
+                                <td><b>Konkurrence</b></td>
+                                <td></td>
+                                <td><b>Total</b></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Vægtning</td>
+                                <td>Score</td>
+                                <td>Vægtning</td>
+                                <td>Score</td>
+                                <td>Vægtning</td>
+                                <td>Score</td>
+                                <td>Vægtning</td>
+                                <td>Score</td>
+                                <td>Vægtning</td>
+                                <td>Score</td>
+                                <td>Vægtning</td>
+                                <td>Score</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><b>KEANTINEN</b></td>
+                                <td>0,2</td>
+                                <td>3</td>
+                                <td>0,4</td>
+                                <td>2</td>
+                                <td>0,5</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>0,8</td>
+                                <td>1</td>
+                                <td>0,5</td>
+                                <td>2</td>
+                                <td><b>5,7</b></td>
+                            </tr>
+                            <tr>
+                                <td><b>Gitgudhub</b></td>
+                                <td>0,2</td>
+                                <td>1</td>
+                                <td>0,4</td>
+                                <td>1</td>
+                                <td>0,5</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td>0,8</td>
+                                <td>3</td>
+                                <td>0,5</td>
+                                <td>1</td>
+                                <td><b>7,5</b></td>
+                            </tr>
+                            <tr>
+                                <td><b>KEA intern</b></td>
+                                <td>0,2</td>
+                                <td>3</td>
+                                <td>0,4</td>
+                                <td>3</td>
+                                <td>0,5</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>0,8</td>
+                                <td>2</td>
+                                <td>0,5</td>
+                                <td>3</td>
+                                <td><b>8,4</b></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <h2>Argumentation</h2>
+                    <p>Gennem benchmarking vandt KEA intern med en score på 8,4. Idéen havde højeste score i fire ud af seks kategorier: Målgruppens størrelse, skalerbarhed, værdi for virksomheden og konkurrence. </p>
+
+                    <p>KEA intern er en holistisk løsning, som med få midler og indenfor en overskuelig tidsramme kan skabe overblik og struktur, og dermed forenkle processen omkring praktiksøgning.</p><br>
+                    <p>De fleste af ressourcerne der kræves til app'ens udvikling er implementering er tilgængelige allerede, hvilket gør den let-realiserbar. <br> KEA intern har derudover gode muligheder for en skalering af målgruppen, så den indbefatter samtlige af KEA's studieretninger, vejledere og samarbejdspartnere/virksomhedskontakter. Derudover kunne man forestille sig, at denne app kunne skaleres op på et landsdækkende plan, så den omfatter lignende uddannelser med praktik som en integreret del og tilsvarende selvstændige praktiksøgnings-proces, som på KEA.</p><br>
+                    <p>Det unikke ved denne idé er især, at en simpel app kan omstrukturere logistikken og skabe værdi på tværs af tre brugergrupper; studerende, vejledere og praktikvirksomheder.</p><br>
+
+
+                    <p>App'ens værdi for de studerende er, at de bliver udstyret med et holistisk redskab, som hjælper med at danne et overblik over processen, søge råd og vejledning dertil og holde sig opdateret med det aktuelle udbud samt overskueliggøre udvalget og mulighederne ift. valg af praktiksted. Alt er samlet ét sted.På denne måde vil de studerende opleve en mere overskuelig praktiksøgningsproces samtidig med at de bliver mere selvhjulpne, dygtigere og mere effektive til at søge praktik. Dette betyder i sidste ende, at trivslen blandt de studerende påvirkes i positiv retning, da processen omkring praktiksøgning simplificeres, smidiggøres og effektiviseres.</p><br>
+                    <p>App'ens værdi for KEA tager sit udgangspunkt i værdien for de studerende, der som bi-produkt vil have en effekt på tilfredshedsundersøgelser, frafaldsprocenten og KEA's branding i de studerendes bevidsthed, men også i omverdens bevidsthed i takt med at KEA bliver synonym med stærke og velforberedte praktik-kandidater. </p>
+                    <p>Udvidelsen af KEA interns interface, så det bliver en platform, som også vejledere kan tilgå, vil ligeledes gøre deres oplevelse af processen mere simpel, smidig og effektiv, hvilket vil også vil give positivt udslag i en tilfredshedsundersøgelse.</p>
+                    <p>Sidst men ikke mindst vil den aktive inddragelse af potentielle praktikvirksomheder bidrage til KEA's branding i erhvervslivet, fordre et tættere samarbejde samt bane vejen for nye. </p>
+
+
+                </section>
+
+
+            </section>
+
+
+            <section>
+                <header>
+                    <h1>Pitch</h1>
+                </header>
+                <p>Processen omkring at søge praktik kan være kilde til frustration og fortvivlelse for både vejledere og studerende. Den fornødne informationsindsamling er spredt udover flere forskellige platforme og processen er meget selvkørende for de studerende.</p> <br>
+                <p>Derfor ønsker vi:
+                    <br> At skabe en samlet og skræddersyet løsning til praktiksøgning, som skal agere bindeled mellem studerende, virksomheder og vejledere.</p><br>
+                <p>KEA intern’s formål er at tilbyde et skræddersyet redskab, hvormed man kan sænke kompleksitetsniveauet omkring praktiksøgningsprocessen. Det gøres ved at give de studerende en platform, hvor de kan få overblik over og rådgivning til alle dele af praktiksøgnings-processen, få overblik over udbuddet og søge med få klik.
+                </p><br>
+                <p>Hver enkelt studerende opretter sig og udfærdiger et personligt visitkort, der kort karakteriserer vedkommende med al formel information, der er påkrævet i en ansøgningsproces samt angiver deres interesser og kompetencer.
+                </p><br>
+                <p>Det personlige visitkort fungerer således som den studerendes ansigt udadtil overfor potentielle praktik-virksomheder. Derudover fungerer den personlige profil, som et værktøj, der gør at den studerende nemt kan skabe sig overblik over sin ansøgningsproces;
+                </p>
+                <p>Man kan uploade og administrere CV, motiverede ansøgninger, se information om kommende praktikperioder, tilknyttede vejledere og vejledningsmøder samt løbende holde sig opdateret på aktuelle praktikopslag, der matcher den studerendes personlige profil.
+                </p><br>
+                <p>Derudover tilbyder KEA intern følgende undermenuer i sin interface:</p><br>
+                <ol>
+                    <li><b>Opslagstavlen</b> - et overblik over aktuelle praktikstillinger.</li><br>
+                    <li><b>Guides</b> - en samling af relevante guides, som kan rådgive og hjælpe den studerende til at optimere sin praktiksøgnings-proces samt</li><br>
+                    <li><b>Virksomhedsdatabasen</b> - et komplet overblik over mulige praktikvirksomheder.</li><br>
+                </ol>
+                <p>Udover at være en løsning, som søger at give KEA’s studerende værktøjerne til at blive mere selvhjulpne, effektive og skarpere i deres ansøgningsproces og branding af sig selv, er visionen som nævnt, at denne app skal agere bindeled mellem de tre involverede parter i praktiksøgnings-processen; studerende, vejleder og virksomhed.
+                </p>
+                <p>Således vil alle tre parter kunne tilgå app’en og nemt med få klik indhente al relevant information og skabe sig overblik; Vejledere vil kunne danne sig overblik over den vifte af studerende, de skal være vejledere for, booke og administrere møder og følge den studerendes ansøgningsproces via den personlige profil.
+                </p>
+                <p>Praktikvirksomheder vil kunne poste praktikopslag, som løbende matches med kvalificerede studerende, hvilket gør det muligt for virksomhederne proaktivt at finde den rette kandidat til deres praktikstilling.
+                </p><br>
+                <p>Med KEA intern får KEA et unikt og skræddersyet værktøj til gavn for alle parter i praktiksøgnings-processen, som ikke alene smidiggør, effektiviserer og skaber overblik over processen fra start til slut, men også skaber rammerne for at det optimale praktikmatch opnås og at KEA bliver synonym med de stærkeste praktik-kandidater på markedet.
+                </p>
+            </section>
+
+            <section id="styletile">
+                <header>
+                    <h1>Styletile</h1>
+                </header>
+                <img src="images/styletile.png" alt="styletile">
+
+                <h2>Visuel identitet</h2>
+                <p>Den visuelle identitet for KEA intern er udviklet med udgangspunkt i stilarten Flat Design, som er karakteriseret ved en todimensionel, minimalistisk stil med få og simple elementer, der med primært fokus på farve og typografi som virkemiddel, søger at maksimerer brugervenligheden i UI'en.</p><br>
+
+                <p>Valget af stilart har bl.a. sin begrundelse i sine klare fordele, når det kommer til at skabe en overskuelig og brugervenlig interface til mobilen. Her drages nytte af den minimalistiske æstetik, der aktivt hjælper brugeren med at identificere og navigere sin vej rundt i interfacen ved hjælp af de tydeligt definerede og simple menuer og ikoner.<br> Derudover harmonerer Flat Design godt med KEA's egen æstetik, som defineret i KEA's designmanual, hvor stilen er minimalistisk med fokus på en sprudlende farvepalette med tema-indelte monokrome farvepaletter, simple former og enkel, men effektfuld sans-serif typografi.</p>
+
+                <p>For at ramme KEA's æstetiske signalværdi tager valget af farvepalette og typografi sit udgangspunkt i KEA's designmanual. I stil med KEA's egen æstetik er farvepaletten derfor monokrom og udviklet med udgangspunkt i KEA's røde signaturfarve. For yderligere at understrege referencerne til KEA's æstetik er typografien Helvetica Neue Condensed Bold valgt.</p><br>
+
+                <p>Valget af grafiske former til logo, ikoner og knapper følger ligeledes linjen fra Flat Design, hvor fokus er holdt på ellipser og rundede rektangler for et stringent udtryk.<br> Designet af grafikken til logo og menu-ikonerne er udviklet med stor vægt på konventionel-signalværdi, således at grafikken er nem at afkode for brugeren. Der er bevidst udelukkende arbejdet med hvid outline og uden for meget detaljerigdom, for netop at understrege den minimalistiske æstetik.</p><br>
+                <p>Den grafiske opsætningen af interfacen har fokus på symmetri, balance og en klar fornemmelse af hierarki, som ligeledes skal guide brugerens forståelse og interaktion. I denne forbindelse er der både arbejdet med størrelses- og farvekontraster, som medvirker til at skabe hierarki og dybde. Derudover er placeringen af elementerne arrangeret med tanke på <i>Loven om nærhed</i> - der sikrer at nærliggende elementer opleves som samhørige, <i>Loven om lukkethed</i> - der fremhæver og definerer hovedmenu'en, samt <i>Loven om lighed</i> - der er brugt i udviklingen af de grafiske former, for at opnå et letgenkendeligt udtryk, for hver elements funktion. Udseendet på app'ens baggrund er udviklet efter rule-of-thirds, der giver det enkle udtryk et simpelt twist og understreger farvepaletten.</p>
+
+
+
+            </section>
+
+            <section id="test_af_valgt_ide">
+                <header>
+                    <h1>Usability test af KEA intern</h1>
+                </header>
+                <p class="indent">2. test</p>
+                <p class="link_ud"><a href="https://www.youtube.com/watch?v=wwfTySrIQrM">Video</a>
+            </section>
+
         </div>
-      </section>
-      
-      <section id="test_af_valgt_ide">
-       <h1>Test af valgt idé (Keaintern)</h1>
-       <p class="indent">2. test</p>
-       <p class="link_ud"><a href="https://www.youtube.com/watch?v=wwfTySrIQrM">Video</a>
-      </section>
-      
-    </section>
-    </div>    
-  </article>
-  
-<!--  Vi kan bruge ren CSS i stedet for JS / jQuery
+
+    </article>
+
+    <!--  Vi kan bruge ren CSS i stedet for JS / jQuery
       I.e:   Is :not(:hover) { ... }
       Det gør dog, at menuen foldes ind første gang siden vises.
       Ved ikke hvor god support er i mobile enheder....
    -->
-  <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
-  <script type="text/javascript">
-$("#burger_menu").mouseover(function() {
-	$("#burger_menu").removeClass( "menu_close");
-});
-$("#burger_menu").mouseout(function() {
-	$("#burger_menu").addClass("menu_close");
-});
-  </script>
- </body>
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $("#burger_menu").mouseover(function() {
+            $("#burger_menu").removeClass("menu_close");
+        });
+        $("#burger_menu").mouseout(function() {
+            $("#burger_menu").addClass("menu_close");
+        });
+    </script>
+</body>
 
 </html>

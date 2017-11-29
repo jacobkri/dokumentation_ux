@@ -5,7 +5,7 @@
     Dette er nødvendigt fordi der er forskel på margin og padding i browsere.
     Nogle browsere bruger padding på bestemte elementer, imens andre bruger margin.
     Vi løser problemet ved at "resette" begge egenskaber på alle elementer.
-*/
+*/ 
     margin: 0;
     padding: 0;
 }

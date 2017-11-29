@@ -1,4 +1,11 @@
 * {
+/*  Stjerne (*) er en såkaldt wildcard selector, som gør det muligt at
+    ændre på alle links på en gang. Normalt bruger folk den mest som "CSS reset".
+    
+    Dette er nødvendigt fordi der er forskel på margin og padding i browsere.
+    Nogle browsere bruger padding på bestemte elementer, imens andre bruger margin.
+    Vi løser problemet ved at "resette" begge egenskaber på alle elementer.
+*/
     margin: 0;
     padding: 0;
 }
@@ -66,7 +73,7 @@ article section header {
 /* border:1px solid rgb(30,30,30);border-radius:0.5em; */
 
 /* Vi har ikke brug for h2-h6 i HTML5 og Living Standard
-   Desuden har de ingen - eller mikro lille - betydning mht SEO.
+   Desuden har de ingen - eller worst case - mikro lille betydning mht SEO.
    Desværre understøttes <setion> + <h1>'s stadig ikke i browserne - dette har dog meget begrænset betydning.
    Se evt: https://www.w3.org/wiki/HTML/Usage/Headings/h1only 
 

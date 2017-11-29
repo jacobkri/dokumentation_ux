@@ -270,18 +270,15 @@ blockquote p {
 
 .link_ud {
     text-align: center;
-    padding: 1em 0 0;
     font-size: 2em;
 }
 
 /* Link til dokumentationssite, trello-board. Osv... */
 
-/*
 .link_ud::before {
     content: "Link: ";
     font-style: italic;
 }
-*/
 
 /* Tilføjes til alle eksterne links */
 

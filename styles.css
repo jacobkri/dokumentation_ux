@@ -1,4 +1,11 @@
 * {
+/*  Stjerne (*) er en såkaldt wildcard selector, som gør det muligt at
+    ændre på alle links på en gang. Normalt bruger folk den mest som "CSS reset".
+    
+    Dette er nødvendigt fordi der er forskel på margin og padding i browsere.
+    Nogle browsere bruger padding på bestemte elementer, imens andre bruger margin.
+    Vi løser problemet ved at "resette" begge egenskaber på alle elementer.
+*/
     margin: 0;
     padding: 0;
 }
@@ -20,7 +27,10 @@ body {
 }
 
 ol,
-ul {
+ul { /* Vi fjerner her default indstillingen for lister, da vi bruger dem til links og credits.
+        Brug "decimal" (ol) og "disc" (ul) senere hvis vi skal have numre- eller punkt liste
+        I.e. For senere at ændre en liste i en bestemt sektion: #section_id { ... } 
+     */ 
     list-style-type: none;
 }
 
@@ -34,8 +44,6 @@ article h1 {
     padding: 1em 0 1em 0;
 }
 
-/* h2, h3 {} /* Vi har ikke brug for h2-h6 i HTML5 og Living Standard */
-
 /* *****************************
 ******** Article, header, ******
 *********** footer *************
@@ -44,7 +52,7 @@ article h1 {
 
 #site_header {
     background: rgb( 235, 114, 106);
-    padding: 2.2em 0 0.5em 0;
+    padding: 2.5em 0 0.5em 0;
     color: #fff;
     text-align: center;
 }
@@ -53,7 +61,7 @@ article h1 {
     font-family: "Helvetica Neue Condensed", Helvetica, Verdana, Arial, sans-serif;
 }
 
-section header {
+article section header {
     text-align: center;
     border-style: solid;
     border-color: rgb(235, 114, 106);
@@ -64,21 +72,26 @@ section header {
 
 /* border:1px solid rgb(30,30,30);border-radius:0.5em; */
 
+/* Vi har ikke brug for h2-h6 i HTML5 og Living Standard
+   Desuden har de ingen - eller worst case - mikro lille betydning mht SEO.
+   Desværre understøttes <setion> + <h1>'s stadig ikke i browserne - dette har dog meget begrænset betydning.
+   Se evt: https://www.w3.org/wiki/HTML/Usage/Headings/h1only 
+
+*/
 section header h1 {
     font-size: 2.5em;
     padding: 0.5em;
 }
-
 h2 {
     font-size: 1.6em;
     margin: 1em 0;
     padding: 0.5em 0;
-    width: 25vw;
+    width: 100%;
     background-color: rgb(235, 114, 106);
     text-align: center;
     text-transform: uppercase;
     border-style: solid;
-    border-radius: 40vw;
+    border-radius: 1em;
     border-color: rgb(235, 147, 141);
 }
 
@@ -104,8 +117,6 @@ section {
     background-color: rgba(235, 114, 106, 0.2);
     height: 1.2em;
     overflow: hidden;
-    position: -webkit-sticky;
-    position: -moz-sticky;
     text-align: center;
     top: 0px;
     width: 5em;
@@ -222,7 +233,7 @@ footer {
     height: 10px;
     width: 100%;
     background: rgb(230, 230, 230);
-    border-radius: 5px;
+    border-radius: 0.2em;
     margin: 1.5em auto;
 }
 
@@ -321,25 +332,21 @@ section {
         height: 1.2em;
         background: rgba(235, 147, 141, 0.1);
         border-style: solid;
-        border-width: 5px;
+        border-width: 0.2em;
         border-color: rgba(234, 80, 69, 0.3);
     }
     50% {
         background: rgba(235, 147, 141, 0.9);
         width: 100%;
         height: 1.2em;
-        border-style: solid;
-        border-width: 5px;
-        border-color: rgba(234, 80, 69, 0.3);
+        border: 0.2em solid rgba(234, 80, 69, 0.3);
     }
     100% {
         height: auto;
         background: rgba(235, 147, 141, 0.9);
         width: 100%;
         border-radius: 0;
-        border-style: solid;
-        border-width: 5px;
-        border-color: rgba(234, 80, 69, 0.3);
+        border: 0.2em solid rgba(234, 80, 69, 0.3);
     }
 }
 
@@ -348,17 +355,13 @@ section {
         height: 1.2em;
         background: rgba(235, 147, 141 0.9);
         width: 100%;
-        border-style: solid;
-        border-width: 5px;
-        border-color: rgba(234, 80, 69, 0.3);
+        border: 0.2em solid rgba(234, 80, 69, 0.3);
     }
     100% {
         height: 1.2em;
         background: rgba(235, 147, 141, 0.1);
         width: 5em;
-        border-style: solid;
-        border-width: 5px;
-        border-color: rgba(234, 80, 69, 0.3);
+        border: none;
     }
 }
 

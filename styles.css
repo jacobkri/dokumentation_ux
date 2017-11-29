@@ -226,6 +226,26 @@ footer {
     margin: 1.5em auto;
 }
 
+
+blockquote {
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+}
+
+blockquote:before {
+    color: #fff;
+    content: open-quote;
+    font-size: 6em;
+    font-family: "georgia";
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote p {
+    display: inline;
+}
+
 /* Simpel horizontal linje */
 
 /* *****************************

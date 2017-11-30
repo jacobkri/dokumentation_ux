@@ -5,7 +5,7 @@
     Dette er nødvendigt fordi der er forskel på margin og padding i browsere.
     Nogle browsere bruger padding på bestemte elementer, imens andre bruger margin.
     Vi løser problemet ved at "resette" begge egenskaber på alle elementer.
-*/
+*/ 
     margin: 0;
     padding: 0;
 }
@@ -118,12 +118,13 @@ section {
     font-size: 2em;
     color: #fff;
     background-color: rgba(235, 114, 106, 0.2);
-    height: 1.2em;
+    height: 1.5em;
     overflow: hidden;
     text-align: center;
     top: 0px;
     width: 5em;
     margin: 0 auto;
+    border:0.2em solid rgba(234, 80, 69, 0);box-sizing:border-box;
     border-bottom-left-radius: 0.2em;
     border-bottom-right-radius: 0.2em;
     transition: background 1s ease-in-out 0.2s;
@@ -269,22 +270,19 @@ blockquote p {
 
 .link_ud {
     text-align: center;
-    padding: 1em 0 0;
     font-size: 2em;
 }
 
 /* Link til dokumentationssite, trello-board. Osv... */
 
-/*
 .link_ud::before {
     content: "Link: ";
     font-style: italic;
 }
-*/
 
 /* Tilføjes til alle eksterne links */
 
-#scrum_video video {
+article video {
     max-width: 1920px;
     display: block;
     margin: 1em auto;
@@ -332,16 +330,14 @@ section {
 @keyframes menu_open {
     0% {
         width: 5em;
-        height: 1.2em;
+        height: 1.5em;
         background: rgba(235, 147, 141, 0.1);
-        border-style: solid;
-        border-width: 0.2em;
-        border-color: rgba(234, 80, 69, 0.3);
+        border: 0.2em solid rgba(234, 80, 69, 0);
     }
     50% {
         background: rgba(235, 147, 141, 0.9);
         width: 100%;
-        height: 1.2em;
+        height: 1.5em;
         border: 0.2em solid rgba(234, 80, 69, 0.3);
     }
     100% {
@@ -355,16 +351,20 @@ section {
 
 @keyframes menu_close {
     0% {
-        height: 1.2em;
+        height: 1.5em;
         background: rgba(235, 147, 141 0.9);
         width: 100%;
-        border: 0.2em solid rgba(234, 80, 69, 0.3);
+        border: 0.2em solid rgba(234, 80, 69, 0.4);
+    }
+    50% {
+         background: rgba(235, 147, 141, 0.7);
+         border: 0.2em solid rgba(234, 80, 69, 0.4);
     }
     100% {
-        height: 1.2em;
+        height: 1.5em;
         background: rgba(235, 147, 141, 0.1);
         width: 5em;
-        border: none;
+        border:0.2em solid rgba(234, 80, 69, 0);
     }
 }
 

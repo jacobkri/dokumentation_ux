@@ -14,6 +14,11 @@ img {
     width: 220px;
 }
 
+#logo {
+    position: relative;
+    left: 30vw;
+}
+
 #app_container {
     display: inline-block;
     width: 100%;
